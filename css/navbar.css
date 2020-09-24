@@ -11,7 +11,7 @@ ul.nkn-navbar {
     list-style-type: none;
     padding: 0;
     margin: 0;
-    background: inherit;
+    background-color: inherit;
 }
 
 ul.nkn-navbar li a {

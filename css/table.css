@@ -30,7 +30,7 @@ table.nkn-table td, table.nkn-table th {
     .nkn-table thead th {
         color: rgba(0, 0, 0, 0.4);
         font-weight: 500;
-        background: #fff;
+        background-color: #fff;
         padding: .75rem;
     }
  
@@ -39,7 +39,7 @@ table.nkn-table td, table.nkn-table th {
     }
     
     .nkn-table tbody tr:nth-child(2n) {
-        background: rgba(248, 249, 250, 0.7);
+        background-color: rgba(248, 249, 250, 0.7);
     }
 }
 

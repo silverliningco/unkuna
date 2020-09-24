@@ -20,14 +20,14 @@ ul.nkn-hamburger-menu {
 
 .nkn-container-hamburger-menu.nkn-open {
     height: 100%;
-    background: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.5);
     width: 100%;   
 }
 
 .nkn-container-hamburger-menu.nkn-open  .nkn-hamburger-menu {
     height: 100%;
     overflow-y: auto;
-    background: #fff; 
+    background-color: #fff; 
     width: 264px;
     
 }
@@ -62,7 +62,7 @@ ul.nkn-hamburger-menu {
 
 .nkn-container-hamburger-menu.nkn-open .nkn-hamburger-menu li.nkn-menu-toggle {
     position: sticky;
-    background: inherit;
+    background-color: inherit;
     top: 0;
 }
 
