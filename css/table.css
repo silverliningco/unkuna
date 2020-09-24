@@ -1,0 +1,103 @@
+/* Tables.
+*/
+table.nkn-table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    display: table;
+}
+
+table.nkn-table caption {
+    padding:.75rem;
+    font-weight: bold;
+}
+
+table.nkn-table td, table.nkn-table th {
+    text-align: left;
+}
+
+@media (min-width: 769px) {
+
+    table.nkn-table td:not(.nkn-hide-s):not(.nkn-hide-m):not(.nkn-hide-l), 
+    table.nkn-table th:not(.nkn-hide-s):not(.nkn-hide-m):not(.nkn-hide-l) {
+        display: table-cell;
+    }
+
+    table.nkn-table tr {
+        border: 1px solid #d7caca;
+    }
+
+    .nkn-table thead th {
+        color: rgba(0, 0, 0, 0.4);
+        font-weight: 500;
+        background: #fff;
+        padding: .75rem;
+    }
+ 
+    .nkn-table td {
+        padding: .75rem;
+    }
+    
+    .nkn-table tbody tr:nth-child(2n) {
+        background: rgba(248, 249, 250, 0.7);
+    }
+}
+
+/* On small screens apply class name .nkn-responsive to the table element.
+*/
+@media (max-width: 768px) {
+    table.nkn-responsive td {
+        padding: .5rem;
+    }
+
+    table.nkn-responsive thead {
+        display: none;
+    }
+
+    table.nkn-responsive tbody tr {
+        position: relative;
+        display: block;
+        border-left: 1px solid #d7caca;
+        border-right: 1px solid #d7caca;
+        border-bottom: 1px solid #d7caca;
+    }
+
+    table.nkn-responsive tbody tr:first-child {
+        border-top: 1px solid #d7caca;
+    }
+
+    table.nkn-responsive td {
+        border: none;
+    }
+
+    table.nkn-responsive td:not(.nkn-title):not(.nkn-description):not(.nkn-right-top) {
+        display: none;
+    }
+
+    table.nkn-responsive td.nkn-title {
+        color: black;
+        display: block;
+        padding-bottom: 0;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        width: 60vw;
+    }
+    
+    table.nkn-responsive td.nkn-right-top {
+        position: absolute;
+        right: .5rem;
+        top: 0;
+        color: #6c6969e6;
+        font-size: 0.8rem;
+    }
+
+    table.nkn-responsive td.nkn-description {
+        color: #6c6969e6;
+        display: block;
+        font-size: 0.8rem;
+        padding-top: .25rem;
+    }
+}
+
+

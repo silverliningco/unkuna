@@ -1,0 +1,67 @@
+/*sidebar*/
+.nkn-sidebar {
+    overflow-y: auto;
+}
+
+ul.nkn-sidebar {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.nkn-sidebar > li {
+    margin: 0;
+    cursor: pointer;
+}
+
+.nkn-sidebar  li a {
+    padding: .5em 1em;
+    color: #424242;
+    width: 100%;
+    cursor: pointer;
+    height: 40px;
+    display: flex;
+    align-items: center;
+}
+
+ul.nkn-sidebar li ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nkn-sidebar > li ul > li {
+    margin: 0;
+}
+
+.nkn-sidebar > li ul > li>a {
+    padding: .5em 1em .5em 2em;
+    width: 100%;
+    cursor: pointer;
+}
+
+/*Sub menu*/
+.nkn-sidebar-section:not(.nkn-open) .nkn-sidebar-item-content{
+    max-height:0; 
+    padding: 0 .5em 0 1em;
+    margin-bottom: 0;
+    border-bottom: 0;    
+}
+
+.nkn-sidebar-item-content {
+    margin-bottom: .5em;
+    padding: 1em .5em .5em 1em;
+    overflow: hidden;
+    height: auto;
+    max-height: 600px;
+}
+
+.nkn-sidebar .nkn-sidebar-section .nkn-heading {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding-right: 1em;
+    cursor: pointer;
+}
+
+
+

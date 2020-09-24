@@ -1,0 +1,107 @@
+/* Modal container.
+*/
+.nkn-modal-container:not(.nkn-open) {
+    display: none; 
+}
+
+.nkn-modal-container.nkn-open {
+    display: block;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: var(--nkn-modal-z-index);
+}
+
+/* Modal window.
+*/
+.nkn-modal-container .nkn-modal {
+    position: absolute;
+    max-width: 100% !important;
+    max-height: 100% !important;
+    background-color: white;
+    border-radius: 0.4rem;
+}
+
+/* Modal window size.
+   We should probably add some style rules so that a "small" modal does not take up the entire screen in mobile.
+*/
+@media (max-width: 768px) {
+    .nkn-modal-container .nkn-modal {
+        top: 1rem;
+        bottom: 1rem;
+        left: 1rem;
+        right: 1rem;
+    }
+}
+
+@media (min-width: 769px) {
+    .nkn-modal-container .nkn-modal {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .nkn-modal-container .nkn-modal.nkn-small {
+        width: 400px;
+        height: 300px;
+    }
+    .nkn-modal-container .nkn-modal.nkn-medium {
+        width: 600px;
+        height: 400px;
+    }
+    .nkn-modal-container .nkn-modal.nkn-large {
+        width: 800px;
+        height: 400px;
+    }
+}
+
+/* Modal content is organized in header, footer and content.
+*/
+.nkn-modal > .nkn-heading {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 64px;
+    padding: 1rem 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.nkn-modal > .nkn-content {
+    position: absolute;
+    top: 64px;
+    left: 0;
+    right: 0;
+    bottom: 64px;
+    padding: 16px;
+    overflow-y: auto;
+}
+
+.nkn-modal > .nkn-footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 64px;
+    padding: 16px;
+    border-bottom-left-radius: .4rem;
+    border-bottom-right-radius: .4rem;
+}
+
+/* Modal close button.
+*/
+.nkn-modal .nkn-close {
+    float: right;
+    line-height: 1.5rem;
+    text-align: center;
+    cursor: pointer;
+}
+
+

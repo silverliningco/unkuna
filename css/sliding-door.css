@@ -1,0 +1,133 @@
+/* Sliding door.
+   Inside a sliding door, elements with class name .nkn-sliding-door-open are visible only when the sliding door is open.
+*/
+.nkn-sliding-door-frame {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
+.nkn-sliding-door-frame > .nkn-fixed-door {
+    position: absolute; 
+    top: 0;
+    bottom: 0;
+    overflow: auto;
+}
+
+.nkn-sliding-door-frame > .nkn-sliding-door {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    z-index: var(--nkn-sliding-door-z-index);
+}
+
+.nkn-sliding-door-frame:not(.nkn-open) > .nkn-sliding-door .nkn-sliding-door-open {
+    display: none;
+}
+
+/* Width of the sliding door.
+   We should probably add media queries to better adjust the size of the door to the screen size.
+   If you make changes here you will need to make corresponding changes to the left/right position values of the fixed door below.
+*/
+.nkn-sliding-door-frame:not(.nkn-open) > .nkn-sliding-door {
+    width: var(--nkn-sliding-door-close-width);
+}
+
+.nkn-sliding-door-frame.nkn-open > .nkn-sliding-door {
+    width: var(--nkn-sliding-door-open-width);
+}
+
+/* Position of the sliding door for class .nkn-opens-left.
+   On full size screens, the fixed door reduces size when the sliding door is open.
+   On small and medium screens the sliding door opens over the fixed door.
+*/
+.nkn-sliding-door-frame.nkn-opens-left > .nkn-fixed-door {
+    left: var(--nkn-sliding-door-close-width);
+    right: 0;
+}
+
+.nkn-sliding-door-frame.nkn-opens-left > .nkn-sliding-door {
+    left: 0;
+    border-right: solid 1px #d7caca;
+}
+
+@media (min-width: 1024px) {
+    .nkn-sliding-door-frame.nkn-opens-left.nkn-open > .nkn-fixed-door {
+        left: var(--nkn-sliding-door-open-width);
+    }
+}
+
+/* Position of the sliding door for class .nkn-opens-right.
+   On full size screens, the fixed door reduces size when the sliding door is open.
+   On small and medium screens the sliding door opens over the fixed door.
+*/
+.nkn-sliding-door-frame.nkn-opens-right > .nkn-fixed-door {
+    left: 0;
+    right: var(--nkn-sliding-door-close-width);
+}
+
+.nkn-sliding-door-frame.nkn-opens-right > .nkn-sliding-door {
+    right: 0;
+    border-left: solid 1px #d7caca;
+}
+
+@media (min-width: 1024px) {
+    .nkn-sliding-door-frame.nkn-opens-right.nkn-open > .nkn-fixed-door {
+        right: var(--nkn-sliding-door-open-width);
+    }
+}
+
+/* Sliding door visual style.
+   The sliding door needs a background because it opens over the fixed content on small and medium screens.
+*/
+.nkn-sliding-door-frame > .nkn-sliding-door {
+    background-color: #FFF;
+}
+
+/* Fixed door curtain.
+   Add an element with class name .nkn-curtain to shade the fixed door when covered by the sliding door.
+*/
+.nkn-sliding-door-frame  .nkn-curtain {
+    position: absolute;
+    z-index: var(--nkn-curtain-z-index);
+}
+
+@media (max-width: 1023px) {
+    .nkn-sliding-door-frame.nkn-open  .nkn-curtain {
+        top: 0;
+        bottom: 0;
+    }
+
+    .nkn-sliding-door-frame.nkn-open.nkn-opens-left  .nkn-curtain {
+        left: 180px;
+        right: 0;
+    }
+
+    .nkn-sliding-door-frame.nkn-open.nkn-opens-right  .nkn-curtain {
+        right: 180px;
+        left: 0;
+    }
+}
+
+/* Sliding door knob visual styles.
+*/
+.nkn-sliding-door .nkn-sliding-door-knob {
+    display: block;
+    border-bottom: 1px solid #d7caca;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    cursor: pointer;
+}
+
+.nkn-sliding-door-frame.nkn-open .nkn-sliding-door .nkn-sliding-door-knob .nkn-icon{
+    transform: rotate(180deg);
+}
+
+.nkn-sliding-door .nkn-sliding-door-knob .nkn-icon {
+    height: 2rem;
+    width: 2rem;    
+}
+

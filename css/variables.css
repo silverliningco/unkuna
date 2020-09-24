@@ -1,0 +1,20 @@
+/*Variables for web component
+*/
+:root {
+    --nkn-form-element-height: 2.4375rem;/*height of input, select, buttom*/
+    --nkn-modal-z-index: 2020;
+    --nkn-hamburger-menu-z-index: 2015;
+    --nkn-navbar-z-index: 2010;
+    --nkn-sliding-door-z-index: 2001;
+    --nkn-dropdown-z-index: 1999;
+    --nkn-curtain-z-index: 2000;
+    /*variables for sliding-door*/
+    --nkn-sliding-door-open-width: 264px;
+    --nkn-sliding-door-close-width: 64px;
+}
+
+
+
+
+
+ 

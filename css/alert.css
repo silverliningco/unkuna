@@ -1,0 +1,35 @@
+/*Error message, informative message, warning message*/
+.nkn-alert:not(:empty) {
+    border-radius: .5rem;    
+    padding: .5em 1em;
+    margin: .5em;
+    cursor: pointer;
+}
+
+.nkn-alert > p{
+    padding: 0;
+    margin: .5rem auto;
+}
+ 
+.nkn-alert.nkn-error{
+    background-color: #f8d7da;
+    color: #9d3f48;
+    border: 1px solid #f7c2c7;
+}
+
+.nkn-alert.nkn-warning {
+    background-color: #fff3cd;
+    border: 1px solid #fbe49d;
+    color: #856404;
+}
+
+.cc-alert-description {
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+.nkn-alert.nkn-informative {
+    background-color: #E7F1F9;
+    color: var(--primary-color);
+    border: 1px solid #BEDEF8;
+}

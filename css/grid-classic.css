@@ -1,0 +1,335 @@
+/* The "classic" grid uses rows and float based columns.  Each row grid is base 12, ie. the total row width is 12 columns.
+   Column widths range from 1 to 12.  A row may contain any combination of .nkn-col- columns, adding up to 12 total.
+   Use nkn-row for columns with no padding, nkn-row-padding for columns with automatic default padding.
+   Content may be centered on the screen by using a combination of nkn-offset- (essentially empty space) and nkn-col- class names.
+*/
+.nkn-row:after, .nkn-row-padding:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+[class*="nkn-col-"] {
+    float: left;
+    width: 100%;
+}
+
+.nkn-row-padding > [class*="nkn-col-"] {
+    padding: .25em .5em;
+}
+
+/* Grid - small screens.
+*/
+.nkn-col-s1 {
+    width: 8.33%;
+}
+.nkn-col-s2 {
+    width: 16.66%;
+}
+.nkn-col-s3 {
+    width: 24.99%;
+}
+.nkn-col-s4 {
+    width: 33.33%;
+}
+.nkn-col-s5 {
+    width: 41.66%;
+}
+.nkn-col-s6 {
+    width: 49.99%;
+}
+.nkn-col-s7 {
+    width: 58.33%;
+}
+.nkn-col-s8 {
+    width: 66.66%;
+}
+.nkn-col-s9 {
+    width: 74.99%;
+}
+.nkn-col-s10 {
+    width: 83.33%;
+}
+.nkn-col-s11 {
+    width: 91.66%;
+}
+.nkn-col-s12 {
+    width: 100%;
+}
+
+/* Offset - small screens.
+*/
+.nkn-offset-s1 {
+    margin-left: 8.33%;
+}
+.nkn-offset-s2 {
+    margin-left: 16.66%;
+}
+.nkn-offset-s3 {
+    margin-left: 24.99%;
+}
+.nkn-offset-s4 {
+    margin-left: 33.33%;
+}
+.nkn-offset-s5 {
+    margin-left: 41.66%;
+}
+.nkn-offset-s6 {
+    margin-left: 49.99%;
+}
+.nkn-offset-s7 {
+    margin-left: 58.33%;
+}
+.nkn-offset-s8 {
+    margin-left: 66.66%;
+}
+.nkn-offset-s9 {
+    margin-left: 74.99%;
+}
+.nkn-offset-s10 {
+    margin-left: 83.33%;
+}
+.nkn-offset-s11 {
+    margin-left: 91.66%;
+}
+.nkn-offset-s12 {
+    margin-left: 100%;
+}
+
+/* Grid - medium size screens.
+*/
+@media print, (min-width: 769px) {
+    .nkn-col-m1 {
+        width: 8.33%;
+    }
+    .nkn-col-m2 {
+        width: 16.66%;
+    }
+    .nkn-col-m3 {
+        width: 24.99%;
+    }
+    .nkn-col-m4 {
+        width: 33.33%;
+    }
+    .nkn-col-m5 {
+        width: 41.66%;
+    }
+    .nkn-col-m6 {
+        width: 49.99%;
+    }
+    .nkn-col-m7 {
+        width: 58.33%;
+    }
+    .nkn-col-m8 {
+        width: 66.66%;
+    }
+    .nkn-col-m9 {
+        width: 74.99%;
+    }
+    .nkn-col-m10 {
+        width: 83.33%;
+    }
+    .nkn-col-m11 {
+        width: 91.66%;
+    }
+    .nkn-col-m12 {
+        width: 100%;
+    }
+
+    /* Offset - medium */
+    .nkn-offset-m1 {
+        margin-left: 8.33%;
+    }
+    .nkn-offset-m2 {
+        margin-left: 16.66%;
+    }
+    .nkn-offset-m3 {
+        margin-left: 24.99%;
+    }
+    .nkn-offset-m4 {
+        margin-left: 33.33%;
+    }
+    .nkn-offset-m5 {
+        margin-left: 41.66%;
+    }
+    .nkn-offset-m6 {
+        margin-left: 49.99%;
+    }
+    .nkn-offset-m7 {
+        margin-left: 58.33%;
+    }
+    .nkn-offset-m8 {
+        margin-left: 66.66%;
+    }
+    .nkn-offset-m9 {
+        margin-left: 74.99%;
+    }
+    .nkn-offset-m10 {
+        margin-left: 83.33%;
+    }
+    .nkn-offset-m11 {
+        margin-left: 91.66%;
+    }
+    .nkn-offset-m12 {
+        margin-left: 100%;
+    }
+}
+
+/* Grid - large size screens.
+*/
+@media print, (min-width: 993px) {
+    .nkn-col-l1 {
+        width: 8.33%;
+    }
+    .nkn-col-l2 {
+        width: 16.66%;
+    }
+    .nkn-col-l3 {
+        width: 24.99%;
+    }
+    .nkn-col-l4 {
+        width: 33.33%;
+    }
+    .nkn-col-l5 {
+        width: 41.66%;
+    }
+    .nkn-col-l6 {
+        width: 49.99%;
+    }
+    .nkn-col-l7 {
+        width: 58.33%;
+    }
+    .nkn-col-l8 {
+        width: 66.66%;
+    }
+    .nkn-col-l9 {
+        width: 74.99%;
+    }
+    .nkn-col-l10 {
+        width: 83.33%;
+    }
+    .nkn-col-l11 {
+        width: 91.66%;
+    }
+    .nkn-col-l12 {
+        width: 100%;
+    }
+
+    /* Offset - full size */
+    .nkn-offset-l1 {
+        margin-left: 8.33%;
+    }
+    .nkn-offset-l2 {
+        margin-left: 16.66%;
+    }
+    .nkn-offset-l3 {
+        margin-left: 24.99%;
+    }
+    .nkn-offset-l4 {
+        margin-left: 33.33%;
+    }
+    .nkn-offset-l5 {
+        margin-left: 41.66%;
+    }
+    .nkn-offset-l6 {
+        margin-left: 49.99%;
+    }
+    .nkn-offset-l7 {
+        margin-left: 58.33%;
+    }
+    .nkn-offset-l8 {
+        margin-left: 66.66%;
+    }
+    .nkn-offset-l9 {
+        margin-left: 74.99%;
+    }
+    .nkn-offset-l10 {
+        margin-left: 83.33%;
+    }
+    .nkn-offset-l11 {
+        margin-left: 91.66%;
+    }
+    .nkn-offset-l12 {
+        margin-left: 100%;
+    }
+}
+
+/* Grid - extra large size screens.
+*/
+@media screen and (min-width: 1440px) {
+    .nkn-col-xl1 {
+        width: 8.33%;
+    }
+    .nkn-col-xl2 {
+        width: 16.66%;
+    }
+    .nkn-col-xl3 {
+        width: 24.99%;
+    }
+    .nkn-col-xl4 {
+        width: 33.33%;
+    }
+    .nkn-col-xl5 {
+        width: 41.66%;
+    }
+    .nkn-col-xl6 {
+        width: 49.99%;
+    }
+    .nkn-col-xl7 {
+        width: 58.33%;
+    }
+    .nkn-col-xl8 {
+        width: 66.66%;
+    }
+    .nkn-col-xl9 {
+        width: 74.99%;
+    }
+    .nkn-col-xl10 {
+        width: 83.33%;
+    }
+    .nkn-col-xl11 {
+        width: 91.66%;
+    }
+    .nkn-col-xl12 {
+        width: 100%;
+    }
+
+    /* Offset - full size */
+    .nkn-offset-xl1 {
+        margin-left: 8.33%;
+    }
+    .nkn-offset-xl2 {
+        margin-left: 16.66%;
+    }
+    .nkn-offset-xl3 {
+        margin-left: 24.99%;
+    }
+    .nkn-offset-xl4 {
+        margin-left: 33.33%;
+    }
+    .nkn-offset-xl5 {
+        margin-left: 41.66%;
+    }
+    .nkn-offset-xl6 {
+        margin-left: 49.99%;
+    }
+    .nkn-offset-xl7 {
+        margin-left: 58.33%;
+    }
+    .nkn-offset-xl8 {
+        margin-left: 66.66%;
+    }
+    .nkn-offset-xl9 {
+        margin-left: 74.99%;
+    }
+    .nkn-offset-xl10 {
+        margin-left: 83.33%;
+    }
+    .nkn-offset-xl11 {
+        margin-left: 91.66%;
+    }
+    .nkn-offset-xl12 {
+        margin-left: 100%;
+    }
+}
+

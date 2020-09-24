@@ -1,0 +1,106 @@
+/* Navbar.
+   By convention, each LI should contain an HTML A element except for the navbar toggle.
+   If you do not place A elements inside your LI elements, you will probably have to copy the "a" styles below to your LI elements.
+*/
+.nkn-navbar-container {
+    position: relative;
+    height: var(--nkn-navbar-height);
+}
+
+ul.nkn-navbar {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    background: inherit;
+}
+
+ul.nkn-navbar li a {
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-flex;
+    height: inherit;
+    align-content: center;
+    align-items: center;
+}
+
+/* Only for .nkn-nav-right we implement style rules here.
+   Style rules for .nkn-nav-left only apply when the navbar is in responsive mode, see style rules below.
+*/
+li.nkn-nav-right {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+/* On medium and full size screens.
+*/
+@media (min-width: 769px) {
+
+    ul.nkn-navbar {
+        display: flex;
+        height: inherit;    
+    }
+
+    ul.nkn-navbar li {
+        height: inherit;    
+    }
+
+    ul.nkn-navbar li.nkn-navbar-toggle {
+        display: none;
+    }
+}
+
+/* On small screens ... */
+@media (max-width: 768px) {
+
+    ul.nkn-navbar {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        z-index: var(--nkn-navbar-z-index);
+    }
+
+    ul.nkn-navbar li {
+        height: var(--nkn-navbar-height);    
+    }
+
+    ul.nkn-navbar:not(.nkn-open) li:not(.nkn-focus-link):not(.nkn-navbar-toggle):not(.nkn-show-always) {
+        display: none;
+    }
+
+    ul.nkn-navbar li.nkn-focus-link {
+        display: block;
+    }
+
+    ul.nkn-navbar.nkn-open li:not(.nkn-navbar-toggle):not(.nkn-show-always):not(.nkn-hide)  {
+        display: block;
+    }
+
+    ul.nkn-navbar li:not(.nkn-navbar-toggle):not(.nkn-show-always) {
+        width: 100%;
+        text-align: center;
+    }
+
+    ul.nkn-navbar li.nkn-navbar-toggle {
+        cursor: pointer;
+        position: absolute;
+        top: 0;
+        z-index: var(--nkn-navbar-z-index);
+        display: inline-flex;
+        align-content: center;
+        align-items: center;
+    }
+
+    ul.nkn-navbar li.nkn-show-always {
+        position: absolute;
+        top: 0;
+        z-index: var(--nkn-navbar-z-index);
+    }
+
+    li.nkn-nav-left {
+        left: 0;
+    }
+}
+
+

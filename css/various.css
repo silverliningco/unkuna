@@ -1,0 +1,192 @@
+/* various.css contains all style rules that included with the framework but are not part of a specific web component.
+ */
+
+html {
+    -webkit-text-size-adjust: 100%; /*Prevent adjustments of font size after orientation changes in iOS.*/
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+body {
+    margin: 0;
+}
+
+* , *:before, *:after {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:active, a:focus { 
+    outline: none; 
+}
+
+p {
+    line-height: 1.5625;
+}
+
+/* -------------------------------------------------- Container*/
+[class*="nkn-container-"] {
+  margin-right: auto;
+  margin-left: auto;
+}
+.nkn-container {
+    padding: 0 1rem;
+}
+
+/*Float element
+*/
+.nkn-clear {
+    overflow: auto;
+}
+
+.nkn-clear:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.nkn-left {
+    float: left;
+}
+
+.nkn-right {
+    float: right;
+}
+
+/*Horizontal center*/
+.nkn-center {
+    text-align: center;
+    margin: 0 auto;
+}
+
+/*Vertical align middle
+*/
+.nkn-vertical-align-middle {
+	display: flex;
+	align-items: center;
+}
+
+/*space between element, only its have display flex
+*/
+.nkn-justify-content-space-between {
+	justify-content: space-between;
+}
+
+/*Hide
+*/
+.nkn-hide {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .nkn-hide-s {
+        display: none;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+    .nkn-hide-m {
+        display: none;
+    }
+}
+
+@media (min-width: 993px) {
+    .nkn-hide-l {
+        display: none;
+    }
+}
+
+/*Show element*/
+.nkn-show {
+    display: block;
+}
+
+/*Display*/
+.nkn-block {
+    display: block;
+}
+
+.nkn-inline {
+    display: inline;
+}
+
+/*Text-align
+*/
+.nkn-text-center {
+    text-align: center;
+}
+
+.nkn-text-justify {
+    text-align: justify;
+}
+
+.nkn-text-left {
+    text-align: left;
+}
+
+.nkn-text-right {
+    text-align: right;
+}
+
+/*Padding
+*/
+.nkn-padding {
+    padding: 0.5rem;
+}
+
+.nkn-padding-right {
+    padding-right: 0.5rem;
+}
+
+.nkn-padding-left {
+    padding-left: 0.5rem;
+}
+
+.nkn-padding-bottom {
+    padding-bottom: 0.5rem;
+}
+
+.nkn-padding-top {
+    padding-top: 0.5rem;
+}
+
+/*Margin
+*/
+.nkn-margin:not(:empty) {
+    margin: 0.5rem;
+}
+
+.nkn-margin-right {
+    margin-right: 0.5rem;
+}
+
+.nkn-margin-left {
+    margin-left: 0.5rem;
+}
+
+.nkn-margin-bottom {
+    margin-bottom: .5rem;
+}
+
+.nkn-margin-top {
+    margin-top: 0.5rem;
+}
+/*Border*/
+.nkn-border {
+    border: solid 1px #d7caca;
+}
+
+.nkn-pointer {
+    cursor: pointer;
+}
+
+/*Icon*/
+.nkn-icon {
+    height: var(--nkn-icon-height);
+    width: var(--nkn-icon-width);
+}
+
+

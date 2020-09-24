@@ -1,0 +1,47 @@
+/* Accordion.
+*/
+.nkn-accordion-section:not(.nkn-open) .nkn-content {
+    max-height: 0; 
+    padding: 0 .5em 0 1em;
+    margin-bottom: 0;
+    border-bottom: 0;
+}
+
+.nkn-accordion-section .nkn-content {
+    margin-bottom: .5em;
+    padding: 1em .5em .5em 1em;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out, padding 0.3s ease-out, margin-bottom 0.3s ease-out, border-bottom 0.3s ease-out;
+    height: auto;
+}
+
+/* Visual styles for each accordion section's heading.
+*/
+.nkn-accordion-section .nkn-heading {
+    display: block;
+    padding: .5em;
+    color: #000;
+    position: relative;
+}
+
+/* Any element with data-nkn-role "accordion-toggle" has a "pointer" cursor.
+*/
+[data-nkn-role="accordion-toggle"] {
+    cursor: pointer;
+}
+
+/* Visual styles for each accordion section's open/close toggle.
+*/
+.nkn-accordion-section:not(.nkn-open) .nkn-accordion-toggle,
+.nkn-accordion-section.nkn-open .nkn-accordion-toggle {
+    position: absolute;
+    top: calc(50% - 3px);
+    transform: translate(-50%, -50%); 
+    right: 0;
+}
+
+.nkn-accordion-section.nkn-open .nkn-accordion-toggle .nkn-icon {
+    transform: rotate(180deg);
+}
+
+
