@@ -1,40 +1,37 @@
 /* Variables for small screens.
 */
 :root {
-    --nkn-navbar-height: 3rem;
     --nkn-border-color: #d7caca;
+    --nkn-box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
     --nkn-color-hover: rgba(248, 249, 250, 0.7);
-    --nkn-focus-link-color: #006cbc;
-    --nkn-icon-height: 1.5rem;
-    --nkn-icon-width: 1.5rem;
     /*variables for sliding-door*/
     --nkn-curtain-light: rgba(0,0,0,.5);
     --nkn-curtain-dark: rgba(0,0,0,.8);
+    /*end variables for sliding-door*/
+    --nkn-focus-link-color: #006cbc;
+    --nkn-icon-height: 1.5rem;
+    --nkn-icon-width: 1.5rem;        
 }
 
-/* Variables for medium screens.
+/*Accordion
 */
-@media (min-width: 769px) {
-    :root {
-        --nkn-navbar-height: 3rem;
-    }
+.nkn-accordion .nkn-heading {
+    border-bottom: solid 1px var(--nkn-border-color);
 }
-
-/* Variables for full size screens.
-*/
-@media (min-width: 1025px) {
-    :root {
-        --nkn-navbar-height: 4rem;
-    }
+.nkn-accordion .nkn-content {
+    border-left: solid 1px var(--nkn-border-color);
+    border-right: solid 1px var(--nkn-border-color);
+    border-bottom: solid 1px var(--nkn-border-color);
 }
-
-
-/*Grid
+/*Border*/
+.nkn-border {
+    border: solid 1px var(--nkn-border-color);
+}
+/*dropdown
 */
-
-/*Table
-*/
-
+.nkn-dropdown.nkn-open .nkn-content {
+    box-shadow: var(--nkn-box-shadow);
+}
 
 /*Form
 */
@@ -50,27 +47,8 @@
 .nkn-input {
     border: 1px solid var(--nkn-border-color);
 }
-
-/*----Select.
+/*End Form
 */
-.nkn-select {
-    border: 1px solid var(--nkn-border-color);
-}
-
-/* Navbar
-*/
-.nkn-navbar-container {
-    background-color: #CCC;
-}
-
-ul.nkn-navbar li a {
-    padding: 0 .75rem;
-}
-
-ul.nkn-navbar li.nkn-navbar-toggle {
-    line-height: var(--nkn-navbar-height);
-    padding: 0 .75rem;
-}
 
 /*Menu hamburguer
 */
@@ -85,16 +63,28 @@ ul.nkn-navbar li.nkn-navbar-toggle {
     vertical-align: middle;
     margin: 0 0.5rem;
 }
-
-/*Accordion
+/*End Menu hamburguer
 */
-.nkn-accordion .nkn-heading {
-    border-bottom: solid 1px var(--nkn-border-color);
+
+/*Progress bar
+*/
+.nkn-icon-item-progress-bar.nkn-completed .nkn-icon {
+    fill: #1FD280;
 }
-.nkn-accordion .nkn-content {
-    border-left: solid 1px var(--nkn-border-color);
-    border-right: solid 1px var(--nkn-border-color);
-    border-bottom: solid 1px var(--nkn-border-color);
+
+.nkn-icon-item-progress-bar.nkn-pending .nkn-icon {
+    fill: #d14;
+}
+/* Navbar
+*/
+.nkn-navbar-container {
+    background-color: #CCC;
+}
+
+/*----Select.
+*/
+.nkn-select {
+    border: 1px solid var(--nkn-border-color);
 }
 
 /*Sliding door
@@ -123,23 +113,7 @@ ul.nkn-navbar li.nkn-navbar-toggle {
     background-color: var(--nkn-color-hover);
 }
 
-/*Progress bar
-*/
-.nkn-icon-item-progress-bar.nkn-completed .nkn-icon {
-    fill: #1FD280;
-}
 
-.nkn-icon-item-progress-bar.nkn-pending .nkn-icon {
-    fill: #d14;
-}
-/*Modal
-*/
 
-/*Various
-*/
 
-/*Border*/
-.nkn-border {
-    border: solid 1px var(--nkn-border-color);
-}
 
