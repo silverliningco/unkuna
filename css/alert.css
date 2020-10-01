@@ -1,8 +1,8 @@
 /*Error message, informative message, warning message*/
 .nkn-alert:not(:empty) {
     border-radius: .5rem;    
-    padding: .5em 1em;
-    margin: .5em;
+    padding: .5rem 1rem;
+    margin: .5rem;
     cursor: pointer;
 }
 

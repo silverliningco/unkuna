@@ -2,14 +2,14 @@
 */
 .nkn-accordion-section:not(.nkn-open) .nkn-content {
     max-height: 0; 
-    padding: 0 .5em 0 1em;
+    padding: 0 .5rem 0 1rem;
     margin-bottom: 0;
     border-bottom: 0;
 }
 
 .nkn-accordion-section .nkn-content {
-    margin-bottom: .5em;
-    padding: 1em .5em .5em 1em;
+    margin-bottom: .5rem;
+    padding: 1rem .5rem .5rem 1rem;
     overflow: hidden;
     transition: max-height 0.3s ease-out, padding 0.3s ease-out, margin-bottom 0.3s ease-out, border-bottom 0.3s ease-out;
     height: auto;
@@ -19,7 +19,7 @@
 */
 .nkn-accordion-section .nkn-heading {
     display: block;
-    padding: .5em;
+    padding: .5rem;
     color: #000;
     position: relative;
 }

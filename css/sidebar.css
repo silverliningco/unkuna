@@ -14,7 +14,7 @@ ul.nkn-sidebar {
 }
 
 .nkn-sidebar  li a {
-    padding: .5em 1em;
+    padding: .5rem 1rem;
     color: #424242;
     width: 100%;
     cursor: pointer;
@@ -34,7 +34,7 @@ ul.nkn-sidebar li ul {
 }
 
 .nkn-sidebar > li ul > li>a {
-    padding: .5em 1em .5em 2em;
+    padding: .5rem 1rem .5rem 2rem;
     width: 100%;
     cursor: pointer;
 }
@@ -42,14 +42,14 @@ ul.nkn-sidebar li ul {
 /*Sub menu*/
 .nkn-sidebar-section:not(.nkn-open) .nkn-sidebar-item-content{
     max-height:0; 
-    padding: 0 .5em 0 1em;
+    padding: 0 .5rem 0 1rem;
     margin-bottom: 0;
     border-bottom: 0;    
 }
 
 .nkn-sidebar-item-content {
-    margin-bottom: .5em;
-    padding: 1em .5em .5em 1em;
+    margin-bottom: .5rem;
+    padding: 1rem .5rem .5rem 1rem;
     overflow: hidden;
     height: auto;
     max-height: 600px;
@@ -59,7 +59,7 @@ ul.nkn-sidebar li ul {
     display: flex;
     align-items: center;
     width: 100%;
-    padding-right: 1em;
+    padding-right: 1rem;
     cursor: pointer;
 }
 

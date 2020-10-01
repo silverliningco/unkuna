@@ -15,7 +15,7 @@
 }
 
 .nkn-row-padding > [class*="nkn-col-"] {
-    padding: .25em .5em;
+    padding: .25rem .5rem;
 }
 
 /* Grid - small screens.
