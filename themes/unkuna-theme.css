@@ -10,7 +10,19 @@
     /*end variables for sliding-door*/
     --nkn-focus-link-color: #006cbc;
     --nkn-icon-height: 1.5rem;
-    --nkn-icon-width: 1.5rem;        
+    --nkn-icon-width: 1.5rem;  
+    
+    /*color palette*/
+    --primary-color: #2095f2;
+    --secondary-color: #003c8f;
+    --accent-color: #0068bf;
+    --primary-text-color:#000;
+    --secondary-text-color:#FFF;
+    --gray-1: #222222;
+    --gray-2: #656565;
+    /* --gray-5: rgba(127,127,127,1); */
+    --gray-3: #ababab;
+	--gray-4: #eaeaea;
 }
 
 /*Accordion
