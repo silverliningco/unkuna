@@ -1,0 +1,23 @@
+/* Progress bar. 
+ */
+ul.nkn-progress-bar {
+	list-style: none;
+	text-align: center;
+	width: 100%;
+	min-height: 2px;
+	margin: 0;
+	padding: 0;
+	display: flex;
+}
+
+ul.nkn-progress-bar li.nkn-item {
+	display: inline-block;
+	width: 20%;
+}
+
+ul.nkn-progress-bar li.nkn-item.nkn-done {
+	background-color: var(--secondary-color);
+} 
+
+
+
