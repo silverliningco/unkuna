@@ -1,6 +1,7 @@
 /*Variables for web component
 */
 :root {
+    --nkn-navbar-height: 3rem;
     --nkn-form-element-height: 2.4375rem;/*height of input, select, buttom*/
     --nkn-modal-z-index: 2020;
     --nkn-hamburger-menu-z-index: 2015;
@@ -13,6 +14,21 @@
     --nkn-sliding-door-close-width: 64px;
 }
 
+/* Variables for medium screens.
+*/
+@media (min-width: 769px) {
+    :root {
+        --nkn-navbar-height: 3rem;
+    }
+}
+
+/* Variables for full size screens.
+*/
+@media (min-width: 1025px) {
+    :root {
+        --nkn-navbar-height: 4rem;
+    }
+}
 
 
 

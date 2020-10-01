@@ -15,6 +15,15 @@ ul.nkn-navbar {
 }
 
 ul.nkn-navbar li a {
+    padding: 0 .75rem;
+}
+
+ul.nkn-navbar li.nkn-navbar-toggle {
+    line-height: var(--nkn-navbar-height);
+    padding: 0 .75rem;
+}
+
+ul.nkn-navbar li a {
     cursor: pointer;
     text-decoration: none;
     display: inline-flex;
