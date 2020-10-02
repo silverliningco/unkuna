@@ -15,8 +15,10 @@
     background-color: transparent;
     border: 1px solid #d7caca;
     border-radius: .4rem;
-    box-shadow: none;
-    box-sizing: inherit;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    -webkit-box-sizing: inherit;
+            box-sizing: inherit;
     padding: 0.5rem;
     height: var(--nkn-form-element-height); 
     color: #000;

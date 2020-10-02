@@ -11,6 +11,8 @@
     margin-bottom: .5rem;
     padding: 1rem .5rem .5rem 1rem;
     overflow: hidden;
+    -webkit-transition: max-height 0.3s ease-out, padding 0.3s ease-out, margin-bottom 0.3s ease-out, border-bottom 0.3s ease-out;
+    -o-transition: max-height 0.3s ease-out, padding 0.3s ease-out, margin-bottom 0.3s ease-out, border-bottom 0.3s ease-out;
     transition: max-height 0.3s ease-out, padding 0.3s ease-out, margin-bottom 0.3s ease-out, border-bottom 0.3s ease-out;
     height: auto;
 }
@@ -36,12 +38,16 @@
 .nkn-accordion-section.nkn-open .nkn-accordion-toggle {
     position: absolute;
     top: calc(50% - 3px);
-    transform: translate(-50%, -50%); 
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%); 
     right: 0;
 }
 
 .nkn-accordion-section.nkn-open .nkn-accordion-toggle .nkn-icon {
-    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+            transform: rotate(180deg);
 }
 
 

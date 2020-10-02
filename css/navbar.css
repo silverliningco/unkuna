@@ -26,10 +26,15 @@ ul.nkn-navbar li.nkn-navbar-toggle {
 ul.nkn-navbar li a {
     cursor: pointer;
     text-decoration: none;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
     display: inline-flex;
     height: inherit;
-    align-content: center;
-    align-items: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 /* Only for .nkn-nav-right we implement style rules here.
@@ -46,6 +51,8 @@ li.nkn-nav-right {
 @media (min-width: 769px) {
 
     ul.nkn-navbar {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
         height: inherit;    
     }
@@ -96,9 +103,14 @@ li.nkn-nav-right {
         position: absolute;
         top: 0;
         z-index: var(--nkn-navbar-z-index);
+        display: -webkit-inline-box;
+        display: -ms-inline-flexbox;
         display: inline-flex;
-        align-content: center;
-        align-items: center;
+        -ms-flex-line-pack: center;
+            align-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
     }
 
     ul.nkn-navbar li.nkn-show-always {

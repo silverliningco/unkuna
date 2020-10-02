@@ -3,7 +3,8 @@
 
 html {
     -webkit-text-size-adjust: 100%; /*Prevent adjustments of font size after orientation changes in iOS.*/
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     font-size: 16px;
 }
 
@@ -12,7 +13,8 @@ body {
 }
 
 * , *:before, *:after {
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
 }
 
 a {
@@ -65,14 +67,20 @@ p {
 /*Vertical align middle
 */
 .nkn-vertical-align-middle {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	align-items: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 }
 
 /*space between element, only its have display flex
 */
 .nkn-justify-content-space-between {
-	justify-content: space-between;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
 }
 
 /*Hide

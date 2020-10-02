@@ -19,8 +19,12 @@ ul.nkn-sidebar {
     width: 100%;
     cursor: pointer;
     height: 40px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 ul.nkn-sidebar li ul {
@@ -56,8 +60,12 @@ ul.nkn-sidebar li ul {
 }
 
 .nkn-sidebar .nkn-sidebar-section .nkn-heading {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     width: 100%;
     padding-right: 1rem;
     cursor: pointer;

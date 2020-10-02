@@ -80,7 +80,8 @@ table.nkn-table td, table.nkn-table th {
         padding-bottom: 0;
         white-space: nowrap;
         overflow: hidden;
-        text-overflow: ellipsis;
+        -o-text-overflow: ellipsis;
+           text-overflow: ellipsis;
         width: 60vw;
     }
     
@@ -116,8 +117,12 @@ table.nkn-table td, table.nkn-table th {
 		padding: 1rem;
 		padding-left: 40%;
 		overflow-wrap: break-word;
+		display: -webkit-box;
+		display: -ms-flexbox;
 		display: flex;
-		align-items: center;
+		-webkit-box-align: center;
+		    -ms-flex-align: center;
+		        align-items: center;
     }
 
     /*label for cell*/
@@ -128,7 +133,11 @@ table.nkn-table td, table.nkn-table th {
 		position: absolute;
 		left: 0;
 		padding: 1rem;
+		display: -webkit-box;
+		display: -ms-flexbox;
 		display: flex;
-		align-items: center;
+		-webkit-box-align: center;
+		    -ms-flex-align: center;
+		        align-items: center;
 	}
 }

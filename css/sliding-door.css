@@ -117,13 +117,16 @@
     display: block;
     border-bottom: 1px solid #d7caca;
     text-align: center;
+    position: -webkit-sticky;
     position: sticky;
     top: 0;
     cursor: pointer;
 }
 
 .nkn-sliding-door-frame.nkn-open .nkn-sliding-door .nkn-sliding-door-knob .nkn-icon{
-    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+            transform: rotate(180deg);
 }
 
 .nkn-sliding-door .nkn-sliding-door-knob .nkn-icon {

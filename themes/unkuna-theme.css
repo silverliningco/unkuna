@@ -42,7 +42,8 @@
 /*dropdown
 */
 .nkn-dropdown.nkn-open .nkn-content {
-    box-shadow: var(--nkn-box-shadow);
+    -webkit-box-shadow: var(--nkn-box-shadow);
+            box-shadow: var(--nkn-box-shadow);
 }
 
 /*Form
