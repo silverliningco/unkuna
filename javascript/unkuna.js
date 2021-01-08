@@ -145,6 +145,9 @@ nkn.clickHandler = function(event) {
         case "sliding-door-knob":
             nkn.slideDoor(nknTarget);
             break;
+        case "sidebar-toggle":
+            nkn.sidebarToggle(nknTarget);
+            break;
         case "item-sidebar-toggle":
             nkn.toggleSidebarItems(nknTarget);
             break;
