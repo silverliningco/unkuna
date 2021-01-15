@@ -1,3 +1,6 @@
+* {
+    outline: solid 1px red;
+}
 /* Modal container.
 */
 .nkn-modal-container:not(.nkn-open) {
@@ -11,7 +14,7 @@
     bottom: 0;
     left: 0;
     right: 0;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: var(--nkn-curtain-color);
     z-index: var(--nkn-modal-z-index);
 }
 
@@ -28,7 +31,7 @@
 /* Modal window size.
    We should probably add some style rules so that a "small" modal does not take up the entire screen in mobile.
 */
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     .nkn-modal-container .nkn-modal {
         top: 1rem;
         bottom: 1rem;
@@ -37,13 +40,11 @@
     }
 }
 
-@media (min-width: 769px) {
+@media (min-width: 768px) {
     .nkn-modal-container .nkn-modal {
         top: 50%;
         left: 50%;
-        -webkit-transform: translate(-50%, -50%);
-            -ms-transform: translate(-50%, -50%);
-                transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
     }
 
     .nkn-modal-container .nkn-modal.nkn-small {
@@ -68,20 +69,11 @@
     left: 0;
     right: 0;
     height: 64px;
-    padding: 1rem 0;
-
-    display: -webkit-box;
-
-    display: -ms-flexbox;
-
+    padding: 0 16px;
     display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: solid 1px var(--nkn-border-color);
 }
 
 .nkn-modal > .nkn-content {
@@ -100,9 +92,13 @@
     left: 0;
     right: 0;
     height: 64px;
-    padding: 16px;
+    padding: 0 16px;
     border-bottom-left-radius: .4rem;
     border-bottom-right-radius: .4rem;
+    border-top: solid 1px var(--nkn-border-color);
+
+    display: flex;
+    align-items: center;
 }
 
 /* Modal close button.

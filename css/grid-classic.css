@@ -98,7 +98,7 @@
 
 /* Grid - medium size screens.
 */
-@media print, (min-width: 769px) {
+@media print, (min-width: 768px) {
     .nkn-col-m1 {
         width: 8.33%;
     }
@@ -177,7 +177,7 @@
 
 /* Grid - large size screens.
 */
-@media print, (min-width: 993px) {
+@media print, (min-width: 992px) {
     .nkn-col-l1 {
         width: 8.33%;
     }
@@ -256,7 +256,7 @@
 
 /* Grid - extra large size screens.
 */
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1200px) {
     .nkn-col-xl1 {
         width: 8.33%;
     }

@@ -13,6 +13,8 @@
     /*variables for sliding-door*/
     --nkn-sliding-door-open-width: 264px;
     --nkn-sliding-door-close-width: 64px;
+    /*Container*/
+    --max-width-container: 100%; /*var valores en diferentes breakpoints*/
 }
 
 /* Variables for medium screens.

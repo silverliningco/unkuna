@@ -4,9 +4,8 @@
     --nkn-border-color: #d7caca;
     --nkn-box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
     --nkn-color-hover: rgba(248, 249, 250, 0.7);
-    /*variables for sliding-door*/
-    --nkn-curtain-light: rgba(0,0,0,.5);
-    --nkn-curtain-dark: rgba(0,0,0,.8);
+    /*es el fondo transparente para el modal*/
+    --nkn-curtain-color: rgba(0,0,0,.5);
     /*end variables for sliding-door*/
     --nkn-focus-link-color: #006cbc;
     --nkn-icon-height: 1.5rem;
@@ -25,16 +24,7 @@
 	--gray-4: #eaeaea;
 }
 
-/*Accordion
-*/
-.nkn-accordion .nkn-heading {
-    border-bottom: solid 1px var(--nkn-border-color);
-}
-.nkn-accordion .nkn-content {
-    border-left: solid 1px var(--nkn-border-color);
-    border-right: solid 1px var(--nkn-border-color);
-    border-bottom: solid 1px var(--nkn-border-color);
-}
+
 /*Border*/
 .nkn-border {
     border: solid 1px var(--nkn-border-color);

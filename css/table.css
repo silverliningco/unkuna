@@ -43,18 +43,18 @@ table.nkn-table td, table.nkn-table th {
     }
 }
 
-/* On small screens apply class name .nkn-responsive to the table element.
+/* On small screens apply class name .nkn-reduced to the table element.
 */
 @media (max-width: 768px) {
-    table.nkn-responsive td {
+    table.nkn-reduced td {
         padding: .5rem;
     }
 
-    table.nkn-responsive thead {
+    table.nkn-reduced thead {
         display: none;
     }
 
-    table.nkn-responsive tbody tr {
+    table.nkn-reduced tbody tr {
         position: relative;
         display: block;
         border-left: 1px solid #d7caca;
@@ -62,19 +62,19 @@ table.nkn-table td, table.nkn-table th {
         border-bottom: 1px solid #d7caca;
     }
 
-    table.nkn-responsive tbody tr:first-child {
+    table.nkn-reduced tbody tr:first-child {
         border-top: 1px solid #d7caca;
     }
 
-    table.nkn-responsive td {
+    table.nkn-reduced td {
         border: none;
     }
 
-    table.nkn-responsive td:not(.nkn-title):not(.nkn-description):not(.nkn-right-top) {
+    table.nkn-reduced td:not(.nkn-title):not(.nkn-description):not(.nkn-right-top) {
         display: none;
     }
 
-    table.nkn-responsive td.nkn-title {
+    table.nkn-reduced td.nkn-title {
         color: black;
         display: block;
         padding-bottom: 0;
@@ -85,7 +85,7 @@ table.nkn-table td, table.nkn-table th {
         width: 60vw;
     }
     
-    table.nkn-responsive td.nkn-right-top {
+    table.nkn-reduced td.nkn-right-top {
         position: absolute;
         right: .5rem;
         top: 0;
@@ -93,7 +93,7 @@ table.nkn-table td, table.nkn-table th {
         font-size: 0.8rem;
     }
 
-    table.nkn-responsive td.nkn-description {
+    table.nkn-reduced td.nkn-description {
         color: #6c6969e6;
         display: block;
         font-size: 0.8rem;
@@ -140,4 +140,4 @@ table.nkn-table td, table.nkn-table th {
 		    -ms-flex-align: center;
 		        align-items: center;
 	}
-}
+}}}}}

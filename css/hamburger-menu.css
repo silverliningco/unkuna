@@ -61,10 +61,10 @@ ul.nkn-hamburger-menu {
 }
 
 .nkn-container-hamburger-menu.nkn-open .nkn-hamburger-menu li.nkn-menu-toggle {
-    position: -webkit-sticky;
+    /* position: -webkit-sticky;
     position: sticky;
     background-color: inherit;
-    top: 0;
+    top: 0; */
 }
 
 .nkn-hamburger-menu.nkn-hamburger-menu-right {

@@ -2,39 +2,19 @@
  */
 
 html {
-    -webkit-text-size-adjust: 100%; /*Prevent adjustments of font size after orientation changes in iOS.*/
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
+    -webkit-text-size-adjust: 100%; /*Prevent adjustments of font size after orientation changes in iOS.*//*lo seguiremos usando?*/            
     font-size: 16px;
 }
 
-body {
-    margin: 0;
-}
-
 * , *:before, *:after {
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
-}
-
-a {
-    text-decoration: none;
-}
-
-a:active, a:focus { 
-    outline: none; 
-}
-
-p {
-    line-height: 1.5625;
+    box-sizing: border-box;
 }
 
 /* -------------------------------------------------- Container*/
-[class*="nkn-container-"] {
-  margin-right: auto;
-  margin-left: auto;
-}
 .nkn-container {
+    max-width: var(--max-width-container);
+    margin-right: auto;
+    margin-left: auto;
     padding: 0 1rem;
 }
 
@@ -66,21 +46,25 @@ p {
 
 /*Vertical align middle
 */
-.nkn-vertical-align-middle {
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-box-align: center;
-	    -ms-flex-align: center;
-	        align-items: center;
+
+.nkn-flex {
+    display: flex;
+} 
+
+.nkn-direction-x {
+    flex-direction: row;
 }
 
-/*space between element, only its have display flex
-*/
-.nkn-justify-content-space-between {
-	-webkit-box-pack: justify;
-	    -ms-flex-pack: justify;
-	        justify-content: space-between;
+.nkn-direction-y {
+    flex-direction: column;
+} 
+
+.nkn-space-between {	
+	justify-content: space-between;
+}
+
+.nkn-align-middle {
+    align-items: center;
 }
 
 /*Hide
@@ -89,19 +73,19 @@ p {
     display: none;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     .nkn-hide-s {
         display: none;
     }
 }
 
-@media (min-width: 769px) and (max-width: 992px) {
+@media (min-width: 768px) and (max-width: 991px) {
     .nkn-hide-m {
         display: none;
     }
 }
 
-@media (min-width: 993px) {
+@media (min-width: 992px) {
     .nkn-hide-l {
         display: none;
     }
@@ -109,7 +93,7 @@ p {
 
 /*Show element*/
 .nkn-show {
-    display: block;
+    display: block; /*Revisar con Carlos, ver como funciona*/
 }
 
 /*Display*/
@@ -161,26 +145,212 @@ p {
     padding-top: 0.5rem;
 }
 
-/*Margin
+/*Spacing
+
+Propiedad
+m - Se usa m para abreviar margin.
+p - Se usa pe para abreviar padding.
+
+Lados
+r - right
+l - left
+t - top
+b - bottom
+x - left and right
+y - top and bottom
+
 */
-.nkn-margin:not(:empty) {
+
+/*Margin small
+sets margin to 0.5 rem
+*/
+.nkn-m-small:not(:empty) {
     margin: 0.5rem;
 }
 
-.nkn-margin-right {
+.nkn-mr-small {
     margin-right: 0.5rem;
 }
 
-.nkn-margin-left {
+.nkn-ml-small {
     margin-left: 0.5rem;
 }
 
-.nkn-margin-bottom {
-    margin-bottom: .5rem;
+.nkn-mt-small {
+    margin-top: .5rem;
 }
 
-.nkn-margin-top {
-    margin-top: 0.5rem;
+.nkn-mb-small {
+    margin-bottom: 0.5rem;
+}
+
+.nkn-mx-small {
+    margin-left: 0.5rem;
+    margin-right: .5rem;
+}
+
+.nkn-my-small {
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+}
+/*Margin medium
+sets margin to 1 rem
+*/
+.nkn-m-medium:not(:empty) {
+    margin: 1rem;
+}
+
+.nkn-mr-medium {
+    margin-right: 1rem;
+}
+
+.nkn-ml-medium {
+    margin-left: 1rem;
+}
+
+.nkn-mt-medium {
+    margin-top:1rem;
+}
+
+.nkn-mb-medium {
+    margin-bottom: 1rem;
+}
+
+.nkn-mx-medium {
+    margin-right: 1rem;
+    margin-left: 1rem;
+}
+.nkn-my-medium{
+    margin-top:1rem;
+    margin-bottom: 1rem;
+}
+
+/*Margin large
+sets margin to 1.5 rem*/
+.nkn-m-large:not(:empty) {
+    margin: 1.5rem;
+}
+
+.nkn-mr-large {
+    margin-right: 1.5rem;
+}
+
+.nkn-ml-large {
+    margin-left: 1.5rem;
+}
+
+.nkn-mt-large {
+    margin-top: 1.5rem;
+}
+
+.nkn-mb-large {
+    margin-bottom: 1.5rem;
+}
+
+.nkn-mx-large {
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+}
+
+.nkn-my-large {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+/*Padding
+*/
+.nkn-p-small:not(:empty) {
+    padding: 0.5rem;
+}
+
+.nkn-pr-small {
+    padding-right: 0.5rem;
+}
+
+.nkn-pl-small {
+    padding-left: 0.5rem;
+}
+
+.nkn-pt-small {
+    padding-top: .5rem;
+}
+
+.nkn-pb-small {
+    padding-bottom: 0.5rem;
+}
+
+.nkn-px-small {
+    padding-left: 0.5rem;
+    padding-right: .5rem;
+}
+
+.nkn-py-small {
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+}
+
+/*Padding medium
+sets Padding to 1 rem
+*/
+.nkn-p-medium:not(:empty) {
+    padding: 1rem;
+}
+
+.nkn-pr-medium {
+    padding-right: 1rem;
+}
+
+.nkn-pl-medium {
+    padding-left: 1rem;
+}
+
+.nkn-pt-medium {
+    padding-top:1rem;
+}
+
+.nkn-pb-medium {
+    padding-bottom: 1rem;
+}
+
+.nkn-px-medium {
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+.nkn-py-medium{
+    padding-top:1rem;
+    padding-bottom: 1rem;
+}
+
+/*Padding large
+sets Padding to 1.5 rem*/
+.nkn-p-large:not(:empty) {
+    padding: 1.5rem;
+}
+
+.nkn-pr-large {
+    padding-right: 1.5rem;
+}
+
+.nkn-pl-large {
+    padding-left: 1.5rem;
+}
+
+.nkn-pt-large {
+    padding-top: 1.5rem;
+}
+
+.nkn-pb-large {
+    padding-bottom: 1.5rem;
+}
+
+.nkn-px-large {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+.nkn-py-large {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
 }
 /*Border*/
 .nkn-border {
@@ -191,10 +361,6 @@ p {
     cursor: pointer;
 }
 
-/*Icon*/
-.nkn-icon {
-    height: var(--nkn-icon-height);
-    width: var(--nkn-icon-width);
-}
+
 
 

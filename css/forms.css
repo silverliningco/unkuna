@@ -1,67 +1,32 @@
 /*Form*/
-
-.nkn-form {
-    width: 100%;   
-    border-radius: .4rem;
-    padding: 1rem; 
-}
-
 .nkn-input,
 .nkn-select,
 .nkn-button {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
     background-color: transparent;
     border: 1px solid #d7caca;
     border-radius: .4rem;
-    -webkit-box-shadow: none;
-            box-shadow: none;
-    -webkit-box-sizing: inherit;
-            box-sizing: inherit;
-    padding: 0.5rem;
+    padding: .5rem;
     height: var(--nkn-form-element-height); 
     color: #000;
 }
 
-.nkn-input{
+.nkn-input,
+.nkn-select {
     width: 100%;
-}
-
-input:focus,
-select:focus,
-button:focus {
-    outline:none ;
-    outline-width: 0 ;
-    box-shadow: none;
-    -moz-box-shadow: none;
-    -webkit-box-shadow: none;
 }
 
 .nkn-select {
-    width: 100%;
     padding-right: 1.5rem;
-}
-
-select {
-    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" height="14" viewBox="0 0 29 14" width="29"><path fill="%23000" d="M9.37727 3.625l5.08154 6.93523L19.54036 3.625"/></svg>') center right no-repeat;
+    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" height="14" viewBox="0 0 29 14" width="29"><path fill="%23000" d="M9.37727 3.625l5.08154 6.93523L19.54036 3.625"/></svg>') center right no-repeat;   
 }
 
 .nkn-button {
     cursor: pointer;
 }
 
-.nkn-button:hover {
-    background-color: var(--nkn-color-hover);
-}
-
 .nkn-button:disabled {
     cursor: not-allowed;
     opacity: 0.3;
-}
-
-.nkn-button:disabled * {
-    pointer-events: none;
 }
 
 .nkn-label {
@@ -73,19 +38,9 @@ select {
     margin-bottom: .5rem;
 }
 
-.nkn-input-radio .nkn-label,
-.nkn-input-checkbox .nkn-label {
-    display: initial;
-}
-
 .nkn-input-radio,
 .nkn-input-checkbox {
     line-height: 1.5;
-}
-
-.nkn-input-radio.nkn-inline,
-.nkn-input-checkbox.nkn-inline {
-    line-height: var(--nkn-form-element-height);
 }
 
 .nkn-label-middle {
