@@ -8,15 +8,15 @@
 
 /* accordion heading.
 */
-.nkn-accordion-section .nkn-heading {
-    display: block;
+.nkn-accordion .nkn-accordion-item .nkn-accordion-heading {
+    display: block; 
     padding: .5rem;
     color: #000;
     position: relative;
     border-bottom: solid 1px var(--nkn-border-color);    
 }
 
-.nkn-accordion-toggle {
+.nkn-accordion .nkn-accordion-item .nkn-accordion-heading .nkn-icon-toggle {
     cursor: pointer;
     position: absolute;
     top: calc(50% - 3px);
@@ -24,26 +24,26 @@
     right: 0;
 }
 
-.nkn-accordion-section.nkn-open .nkn-accordion-toggle {
+.nkn-accordion .nkn-accordion-item.nkn-open .nkn-icon-toggle {
     transform: rotate(180deg);
 }
 
 /*accordion content
 */
-.nkn-accordion-section:not(.nkn-open) .nkn-content {
+.nkn-accordion .nkn-accordion-item:not(.nkn-open) .nkn-accordion-content {
     height: 0; 
     overflow: hidden;
     padding: 0 0.5rem;
 }
 
-.nkn-accordion-section.nkn-open .nkn-content {
+.nkn-accordion .nkn-accordion-item.nkn-open .nkn-accordion-content {
     padding: .5rem;  
     height: auto;
     border-bottom: solid 1px var(--nkn-border-color);
     
 }
 
-.nkn-accordion-section .nkn-content {
+.nkn-accordion .nkn-accordion-item .nkn-accordion-content {
     transition: max-height 0.3s ease-out, 
                 padding 0.3s ease-out, 
                 border-bottom 0.3s ease-out;    
