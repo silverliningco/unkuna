@@ -3,7 +3,7 @@
 .nkn-select,
 .nkn-button {
     background-color: transparent;
-    border: 1px solid #d7caca;
+    border: solid 1px var(--nkn-border-color);
     border-radius: .4rem;
     padding: .5rem;
     height: var(--nkn-form-element-height); 
@@ -32,6 +32,7 @@
 .nkn-label {
     margin-bottom: .5rem;
     display: inline-block;
+    color: var(--nkn-label-color);
 }
 
 .nkn-input-radio {
