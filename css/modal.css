@@ -1,6 +1,3 @@
-* {
-    outline: solid 1px red;
-}
 /* Modal container.
 */
 .nkn-modal-container:not(.nkn-open) {
@@ -63,7 +60,7 @@
 
 /* Modal content is organized in header, footer and content.
 */
-.nkn-modal > .nkn-heading {
+.nkn-modal > .nkn-modal-heading {
     position: absolute;
     top: 0;
     left: 0;
@@ -76,7 +73,7 @@
     border-bottom: solid 1px var(--nkn-border-color);
 }
 
-.nkn-modal > .nkn-content {
+.nkn-modal > .nkn-modal-content {
     position: absolute;
     top: 64px;
     left: 0;
@@ -86,7 +83,7 @@
     overflow-y: auto;
 }
 
-.nkn-modal > .nkn-footer {
+.nkn-modal > .nkn-modal-footer {
     position: absolute;
     bottom: 0;
     left: 0;

@@ -2,26 +2,23 @@
    By convention, each LI should contain an HTML A element except for the navbar toggle.
    If you do not place A elements inside your LI elements, you will probably have to copy the "a" styles below to your LI elements.
 */
-* {
-    outline: solid 1px red;
-}
 
-.nkn-navbar .nkn-head {
+.nkn-navbar .nkn-navbar-heading {
     display: flex;
     align-items: center;
     width: 100%;
 }
 
-.nkn-navbar .nkn-head  .nkn-toggle {
+.nkn-navbar .nkn-navbar-heading  .nkn-icon-toggle {
     margin-left: auto;
 }
 
-.nkn-navbar .nkn-nav-content {
+.nkn-navbar .nkn-navbar-content {
     position: relative;
 }
-.nkn-navbar ul.nkn-nav {
+.nkn-navbar .nkn-navbar-content ul.nkn-nav {
     list-style-type: none;
-    padding: 0;
+    padding: 0; 
     margin: 0;
     display: none;    
     position: absolute;
@@ -30,14 +27,10 @@
     width: 100%;
 }
 
-.nkn-navbar ul.nkn-nav  li {
+.nkn-navbar .nkn-navbar-content ul.nkn-nav  li {
     padding: .5rem 1rem;
 }
 
-.nkn-navbar ul.nkn-nav li a {
-    cursor: pointer;
-    text-decoration: none;/*en el framework considero o no quitar esta regla para la etiqueta <a>*/    
-}
 
 .nkn-navbar.nkn-open  ul.nkn-nav {
     display: block;    
@@ -51,12 +44,12 @@
         align-items: center;
         justify-content: space-between;
     }
-    .nkn-navbar ul.nkn-nav {
+    .nkn-navbar .nkn-navbar-content ul.nkn-nav {
         display: flex;
         position: relative;
     }
 
-    .nkn-navbar .nkn-toggle {
+    .nkn-navbar .nkn-navbar-heading .nkn-icon-toggle {
         display: none;
     }
 }
