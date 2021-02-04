@@ -16,7 +16,7 @@ table.nkn-table td, table.nkn-table th {
     text-align: left;
 }
 
-@media (min-width: 769px) {
+@media (min-width: 768px) {
      
     table.nkn-table th:not(.nkn-hide-s):not(.nkn-hide-m):not(.nkn-hide-l),
     table.nkn-table td:not(.nkn-hide-s):not(.nkn-hide-m):not(.nkn-hide-l) {
@@ -24,7 +24,7 @@ table.nkn-table td, table.nkn-table th {
     }
 
     table.nkn-table tr {
-        border: 1px solid #d7caca;
+        border: solid 1px var(--nkn-border-color);
     }
 
     .nkn-table thead th {
@@ -45,7 +45,7 @@ table.nkn-table td, table.nkn-table th {
 
 /* On small screens apply class name .nkn-reduced to the table element.
 */
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     table.nkn-reduced td {
         padding: .5rem;
     }
@@ -57,13 +57,13 @@ table.nkn-table td, table.nkn-table th {
     table.nkn-reduced tbody tr {
         position: relative;
         display: block;
-        border-left: 1px solid #d7caca;
-        border-right: 1px solid #d7caca;
-        border-bottom: 1px solid #d7caca;
+        border-left: solid 1px var(--nkn-border-color);
+        border-right: solid 1px var(--nkn-border-color);
+        border-bottom: solid 1px var(--nkn-border-color);
     }
 
     table.nkn-reduced tbody tr:first-child {
-        border-top: 1px solid #d7caca;
+        border-top: solid 1px var(--nkn-border-color);
     }
 
     table.nkn-reduced td {
@@ -80,8 +80,6 @@ table.nkn-table td, table.nkn-table th {
         padding-bottom: 0;
         white-space: nowrap;
         overflow: hidden;
-        -o-text-overflow: ellipsis;
-           text-overflow: ellipsis;
         width: 60vw;
     }
     
@@ -99,45 +97,33 @@ table.nkn-table td, table.nkn-table th {
         font-size: 0.8rem;
         padding-top: .25rem;
     }
-}
 
-/*Vertical table for small device*/
-@media (max-width: 812px) {	
+    /*Vertical table*/
 	table.nkn-vertical thead {
 		display: none;
     }
     
 	table.nkn-vertical tr {
 		display: block;
-		margin: 1rem .5rem .5rem .5rem;
+        margin: .5rem;
+        border: solid 1px var(--nkn-border-color);
     }
     
 	table.nkn-vertical td {
-		position: relative;
-		padding: 1rem;
-		padding-left: 40%;
-		overflow-wrap: break-word;
-		display: -webkit-box;
-		display: -ms-flexbox;
-		display: flex;
-		-webkit-box-align: center;
-		    -ms-flex-align: center;
-		        align-items: center;
+        display: flex;
+        align-items: center;
+        margin: 1rem .5rem;
+        width: calc(100vw - 2rem - 2px);
     }
 
     /*label for cell*/
 	table.nkn-vertical td:before {
-		content: attr(data-title) " ";
-		text-align: left;
-		color: var(--gray-3);
-		position: absolute;
-		left: 0;
-		padding: 1rem;
-		display: -webkit-box;
-		display: -ms-flexbox;
-		display: flex;
-		-webkit-box-align: center;
-		    -ms-flex-align: center;
-		        align-items: center;
+        content: attr(data-title) " ";
+        color: var(--data-title-color);
+        width: 40%;
+        padding-right: .5rem;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        overflow-wrap: break-word;
 	}
-}}}}}
+}
