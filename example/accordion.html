@@ -8,27 +8,37 @@
     <link rel="stylesheet" href="../css/variables.css">
     <link rel="stylesheet" href="../css/accordion.css">
     <link rel="stylesheet" href="../themes/unkuna-theme.css">
+    <script src="https://kit.fontawesome.com/2dd36ad35f.js" crossorigin="anonymous"></script>
+
 </head>
 <body>
-    <!--- Accordion -->
-    <div class="nkn-accordion nkn-open-only-one">
+    <!--- Simple Accordion -->
+    <div class="nkn-accordion">
         <div class="nkn-accordion-item">
             <div class="nkn-accordion-heading" data-nkn-role="accordion-toggle">
-                Section 1 
+                Lightning Fast 
                 <span class="nkn-icon-toggle">
-                    i
+                    <svg width="24" height="24">
+                        <title>Accordion toggle</title>
+                        <use xlink:href="../sprites/icons.svg#angle-down"></use>
+                    </svg>
+                    <!-- <i class="fas fa-caret-down"></i> -->
                 </span>
             </div>
-            <div class="nkn-accordion-content">Section 1 Content</div>
+            <div class="nkn-accordion-content">
+                <p>Version 3.0 is built for speed. Performance will no longer be compromised as we scale.</p>
+            </div>
         </div>     
         <div class="nkn-accordion-item">
             <div class="nkn-accordion-heading" data-nkn-role="accordion-toggle">
-                Section 2
+                Improved Tracing
                 <span class="nkn-icon-toggle">
                     i
                 </span>
             </div>
-            <div class="nkn-accordion-content">Section 2 Content</div>
+            <div class="nkn-accordion-content">
+                Our Google Maps tracing library for existing homes has been completely redesigned.
+            </div>
         </div>                            
     </div>
     <h2>otro</h2>
