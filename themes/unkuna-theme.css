@@ -1,122 +1,39 @@
-/* Variables for small screens.
-*/
-:root {
+:root {    
+
     --nkn-border-color: #d7caca;
-    --nkn-box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
-    --nkn-color-hover: rgba(248, 249, 250, 0.7);
-    /*es el fondo transparente para el modal*/
-    --nkn-curtain-color: rgba(0,0,0,.5);
-    /*end variables for sliding-door*/
-    --nkn-focus-link-color: #006cbc;
-    --nkn-icon-height: 1.5rem;
-    --nkn-icon-width: 1.5rem;  
-    
-    /*color palette*/
-    --primary-color: #2095f2;
-    --secondary-color: #003c8f;
-    --accent-color: #0068bf;
-    --primary-text-color:#000;
-    --secondary-text-color:#FFF;
-    --gray-1: #222222;
-    --gray-2: #656565;
-    /* --gray-5: rgba(127,127,127,1); */
-    --gray-3: #ababab;
-	--gray-4: #eaeaea;
-}
+    --nkn-box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12); /*Explicamos con ejemplos en la documentación*/
+    /*Container*/
+    --max-width-container: 100%;
 
+    /*background color modal*/
+    --nkn-curtain-color: rgba(0,0,0,.5);   
+    --nkn-label-color:  rgba(0, 0, 0, 0.4);
 
-/*Border*/
-.nkn-border {
-    border: solid 1px var(--nkn-border-color);
-}
-/*dropdown
+    /*Table*/
+    /*color for data-title in vertical table*/
+    --data-title-color: #d7caca;
+} 
+
+/* Variables for medium screens.
 */
-.nkn-dropdown.nkn-open .nkn-content {
-    -webkit-box-shadow: var(--nkn-box-shadow);
-            box-shadow: var(--nkn-box-shadow);
+@media (min-width: 768px) {
+    :root {
+        --max-width-container: 720px;
+    }  
 }
-
-/*Form
+ 
+/* Variables for large screens.
 */
-.nkn-form {
-    border: solid 1px var(--nkn-border-color);
-}
-
-/*----Input text*/
-.nkn-label {
-    color: rgba(0, 0, 0, 0.4);
-}
-
-.nkn-input {
-    border: 1px solid var(--nkn-border-color);
-}
-/*End Form
-*/
-
-/*Menu hamburguer
-*/
-/*Hover on li of hamburger menu*/
-.nkn-container-hamburger-menu.nkn-open ul > li:not(.nkn-menu-toggle):hover {
-    background-color: var(--nkn-color-hover);
-}
-
-/*Icon in nkn-hamburger-menu*/
-.nkn-hamburger-menu .nkn-icon {
-    cursor: pointer;
-    vertical-align: middle;
-    margin: 0 0.5rem;
-}
-/*End Menu hamburguer
-*/
-
-/*Progress bar
-*/
-.nkn-icon-item-progress-bar.nkn-completed .nkn-icon {
-    fill: #1FD280;
-}
-
-.nkn-icon-item-progress-bar.nkn-pending .nkn-icon {
-    fill: #d14;
-}
-/* Navbar
-*/
-.nkn-navbar-container {
-    background-color: #CCC;
-}
-
-/*----Select.
-*/
-.nkn-select {
-    border: 1px solid var(--nkn-border-color);
-}
-
-/*Sliding door
-*/
-@media (max-width: 1024px) { 
-    .nkn-sliding-door-frame.nkn-open  .nkn-curtain.nkn-curtain-light {
-        background-color: var(--nkn-curtain-light);
-    }
-
-    .nkn-sliding-door-frame.nkn-open  .nkn-curtain.nkn-curtain-dark {
-        background-color: var(--nkn-curtain-dark);
+@media (min-width: 992px) {
+    :root {
+        --max-width-container: 960px;
     }
 }
-
-/*Sidebar
+ 
+/* Variables for extra large size screens.
 */
-.nkn-sidebar > li > a:hover {
-    background-color: var(--nkn-color-hover);
+@media (min-width: 1200px) {
+    :root {
+        --max-width-container: 1140px; /*revisar*/
+    }
 }
-
-.nkn-sidebar > li ul li > a:hover {
-    background-color: var(--nkn-color-hover);
-}
-
-.nkn-sidebar .nkn-heading:hover {
-    background-color: var(--nkn-color-hover);
-}
-
-
-
-
-
