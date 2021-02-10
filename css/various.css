@@ -16,10 +16,11 @@ body {
 }
 a {
     text-decoration: none;
+    color: initial;
 }
 /* -------------------------------------------------- Container*/
 .nkn-container {
-    max-width: var(--max-width-container);
+    max-width: var(--nkn-width-container);
     margin-right: auto;
     margin-left: auto;
     padding: 0 1rem;
@@ -340,8 +341,10 @@ sets Padding to 1.5 rem*/
     cursor: pointer;
 }
 
-
-
-
+/*Icon*/
+.nkn-icon {
+    width: 1.5rem;
+    height: 1.5rem;
+}
 
 
