@@ -1,0 +1,19 @@
+/*Float element
+*/
+.nkn-clear {
+    overflow: auto;
+}
+
+.nkn-clear:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.nkn-left {
+    float: left;
+}
+
+.nkn-right {
+    float: right;
+}

@@ -1,0 +1,32 @@
+/*Horizontal alignament for text
+*/
+.nkn-text-center {
+    text-align: center;
+}
+
+.nkn-text-justify {
+    text-align: justify;
+}
+
+.nkn-text-left {
+    text-align: left;
+}
+
+.nkn-text-right {
+    text-align: right;
+}
+
+/*Horizontal alignament for element
+*/
+.nkn-center {
+    text-align: center;
+    margin: 0 auto;
+}
+
+/*Vertical align 
+*/
+.nkn-vertical-align{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

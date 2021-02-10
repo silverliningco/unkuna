@@ -1,0 +1,18 @@
+html {
+    -webkit-text-size-adjust: 100%; /*Prevent adjustments of font size after orientation changes in iOS.*//*lo seguiremos usando?*/            
+    font-size: 16px;
+}
+
+* , *:before, *:after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-size: 16px;
+}
+
+a {
+    text-decoration: none;
+    color: initial;
+}
