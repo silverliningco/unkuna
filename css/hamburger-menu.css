@@ -28,3 +28,13 @@
     display: none;
 }
 
+/* @media (min-width: 768px) {
+    .nkn-hamburger-menu.nkn-open {
+        position: relative;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        background-color: var(--nkn-curtain-color);
+    }
+} */
