@@ -1,91 +1,30 @@
-/* -------------------------------------------------- Hamburger Menu */
-.nkn-container-hamburger-menu.nkn-open {
+.nkn-hamburger-menu.nkn-open {
     position: absolute;
-    z-index: var(--nkn-hamburger-menu-z-index);
-    top: 0;
     left: 0;
     right: 0;
+    top: 0;
     bottom: 0;
+    background-color: var(--nkn-curtain-color);
 }
 
-.nkn-container-hamburger-menu:not(.nkn-open) .nkn-menu-toggle {
-    cursor: pointer;
-}
- 
-ul.nkn-hamburger-menu {
-    padding: 0;
-    margin: 0;
-    list-style-type: none;
-}
-
-.nkn-container-hamburger-menu.nkn-open {
+.nkn-hamburger-container {
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    width: 100%;   
-}
-
-.nkn-container-hamburger-menu.nkn-open  .nkn-hamburger-menu {
-    height: 100%;
-    overflow-y: auto;
-    background-color: #fff; 
+    background-color: #fff;
+    box-shadow: var(--nkn-box-shadow);
     width: 264px;
-    
 }
 
-.nkn-container-hamburger-menu:not(.nkn-open) .nkn-hamburger-menu li:not(.nkn-menu-toggle):not(.nkn-hamburger-menu-open) {
+.nkn-hamburger-menu ul.nkn-hamburger-content {
+    list-style-type: none;
+    padding: 0; 
+    margin: 0;    
+}
+
+.nkn-hamburger-menu .nkn-hamburger-content > .nkn-link {
+    padding: .5rem 1rem;
+}
+
+.nkn-hamburger-menu:not(.nkn-open) .nkn-hamburger-content {
     display: none;
-}
-
-.nkn-container-hamburger-menu:not(.nkn-open) li.nkn-menu-toggle.nkn-hamburger-menu-close {
-    display: none;		
-}
-
-.nkn-container-hamburger-menu.nkn-open li.nkn-menu-toggle.nkn-hamburger-menu-open {
-    display: none;		
-}
-
-.nkn-container-hamburger-menu.nkn-open li.nkn-menu-toggle.nkn-hamburger-menu-close {
-    border: solid 1px var(--nkn-border-color);		
-}
-
-.nkn-container-hamburger-menu.nkn-open .nkn-hamburger-menu li:not(.nkn-menu-toggle) {
-    width: 100%;
-    display: block;
-    font-size: 14px;
-    line-height: 44px;
-}
-
-.nkn-container-hamburger-menu.nkn-open .nkn-hamburger-menu li:not(.nkn-menu-toggle) a {
-    width: 100%;
-    color: initial;
-}
-
-.nkn-container-hamburger-menu.nkn-open .nkn-hamburger-menu li.nkn-menu-toggle {
-    /* position: -webkit-sticky;
-    position: sticky;
-    background-color: inherit;
-    top: 0; */
-}
-
-.nkn-hamburger-menu.nkn-hamburger-menu-right {
-    position: absolute;
-    top: 0;
-    right: 0;
-    z-index: var(--nkn-hamburger-menu-z-index);
-}
-
-.nkn-container-hamburger-menu.nkn-open .nkn-hamburger-menu.nkn-hamburger-menu-right li.nkn-menu-toggle {
-    text-align: right;
-}
-
-.nkn-hamburger-menu.nkn-hamburger-menu-left {
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: var(--nkn-hamburger-menu-z-index);
-}
-
-.nkn-container-hamburger-menu.nkn-open .nkn-hamburger-menu ul {
-    padding: 0;
 }
 
