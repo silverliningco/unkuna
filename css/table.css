@@ -119,7 +119,7 @@ table.nkn-table td, table.nkn-table th {
     /*label for cell*/
 	table.nkn-vertical td:before {
         content: attr(data-title) " ";
-        color: var(--data-title-color);
+        color: var(--nkn-secondary-title-color);
         width: 40%;
         padding-right: .5rem;
         overflow: hidden;
