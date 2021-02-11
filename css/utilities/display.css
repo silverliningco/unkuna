@@ -6,3 +6,7 @@
 .nkn-inline {
     display: inline;
 }
+
+.nkn-flex {
+    display: flex;
+}
