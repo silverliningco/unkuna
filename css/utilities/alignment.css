@@ -18,9 +18,17 @@
 
 /*Horizontal alignament for element
 */
+/*Center*/
 .nkn-center {
     text-align: center;
     margin: 0 auto;
+}
+
+/*space between elements*/
+.nkn-space-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 /*Vertical align 
