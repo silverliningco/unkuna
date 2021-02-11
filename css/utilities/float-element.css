@@ -10,10 +10,10 @@
     clear: both;
 }
 
-.nkn-left {
+.nkn-clear .nkn-left {
     float: left;
 }
 
-.nkn-right {
+.nkn-clear .nkn-right {
     float: right;
 }
