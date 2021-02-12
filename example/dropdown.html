@@ -1,72 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Dropdown</title>
-    <link rel="stylesheet" href="/css/dropdown.css">
-</head>
-<body>
-<p>lorem  lorem  lorem  lorem  lorem  lorem  lorem  lorem  lorem  lorem  lorem  lorem  lorem  lorem  lorem  lorem  lorem  lorem  lorem  lorem  lorem  lorem  lorem  lorem  lorem  lorem  lorem  lorem  lorem  lorem  lorem  lorem  lorem  lorem  lorem  lorem  lorem  lorem  lorem  lorem  lorem  lorem  lorem  </p>
-<p>lorem  lorem  lorem  lorem  lorem  lorem  lorem  lorem  lorem  lorem  lorem  lorem  lorem  lorem  lorem  lorem  lorem  lorem  lorem  lorem  lorem  lorem  lorem  lorem  lorem  lorem  lorem  lorem  lorem  lorem  lorem  lorem  lorem  lorem  lorem  lorem  lorem  lorem  lorem  lorem  lorem  lorem  lorem  </p>
-<p>lorem  lorem  lorem  lorem  lorem  lorem  lorem  lorem  lorem  lorem  lorem  lorem  lorem  lorem  lorem  lorem  lorem  lorem  lorem  lorem  lorem  lorem  lorem  lorem  lorem  lorem  lorem  lorem  lorem  lorem  lorem  lorem  lorem  lorem  lorem  lorem  lorem  lorem  lorem  lorem  lorem  lorem  lorem  </p>
-<p>lorem  lorem  lorem  lorem  lorem  lorem  lorem  lorem  lorem  lorem  lorem  lorem  lorem  lorem  lorem  lorem  lorem  lorem  lorem  lorem  lorem  lorem  lorem  lorem  lorem  lorem  lorem  lorem  lorem  lorem  lorem  lorem  lorem  lorem  lorem  lorem  lorem  lorem  lorem  lorem  lorem  lorem  lorem  </p>
-<!--- dropdown -->
-<div class="nkn-dropdown">
-    <div  class="nkn-dropdown-toggle" data-nkn-role="dropdown-toggle">
-        drop me 
-    </div>
-    
-    <ul class="nkn-dropdown-content">
-      <li><a href="#">Action</a></li>
-      <li><a href="#">Another action</a></li>
-      <li><a href="#">Something else here</a></li>
-    </ul>
-</div>
+  	<head>
+      	<meta charset="UTF-8">
+      	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+      	<title>Dropdown</title>
+      	<link rel="stylesheet" href="/css/initialize.css"> 
+		<link rel="stylesheet" href="/css/components/dropdown.css">    
+		<link rel="stylesheet" href="../css/utilities/icon.css">
+		<link rel="stylesheet" href="../css/utilities/display.css">
+		<link rel="stylesheet" href="../css/utilities/alignment.css">
+		<link rel="stylesheet" href="../css/utilities/float-element.css">
+		<link rel="stylesheet" href="../theme/unkuna-theme.css">
+  	</head>
+  	<body>
+		<!--- Simple dropdown -->
+		<div class="nkn-dropdown">
+			<div class="nkn-dropdown-toggle" data-nkn-role="dropdown-toggle">
+				drop me 
+				<div class="nkn-icon-toggle">
+					<svg width="16px" height="16px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+						<!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+						<title>Stockholm-icons / Navigation / Angle-down</title>
+						<desc>Created with Sketch.</desc>
+						<defs></defs>
+						<g id="Stockholm-icons-/-Navigation-/-Angle-down" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+							<polygon id="Shape" points="0 0 24 0 24 24 0 24"></polygon>
+							<path d="M6.70710678,15.7071068 C6.31658249,16.0976311 5.68341751,16.0976311 5.29289322,15.7071068 C4.90236893,15.3165825 4.90236893,14.6834175 5.29289322,14.2928932 L11.2928932,8.29289322 C11.6714722,7.91431428 12.2810586,7.90106866 12.6757246,8.26284586 L18.6757246,13.7628459 C19.0828436,14.1360383 19.1103465,14.7686056 18.7371541,15.1757246 C18.3639617,15.5828436 17.7313944,15.6103465 17.3242754,15.2371541 L12.0300757,10.3841378 L6.70710678,15.7071068 Z" id="Path-94" fill="#000000" fill-rule="nonzero" transform="translate(12.000003, 11.999999) rotate(-180.000000) translate(-12.000003, -11.999999) "></path>
+						</g>
+					</svg>
+					<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left-short" viewBox="0 0 16 16">
+						<path fill-rule="evenodd" d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5z"/>
+					  </svg>
+				</div>  
+			</div>
+			
+			<ul class="nkn-dropdown-content">
+				<li class="nkn-link"><a href="#">Action</a></li>
+				<li class="nkn-link"><a href="#">Another action</a></li>
+				<li class="nkn-link"><a href="#">Something else here</a></li>
+			</ul>
+		</div>
+		<!--- End simple dropdown -->
+		<!-- Dropdown on scroll -->
+		<ul style="list-style: none; overflow-x: auto; display: flex; width: 600px;">
+			<li>Im an elemnt 1</li>
+			<li>Im an elemnt 2</li>
+			<li>Im an elemnt 3</li>
+			<li>Im an elemnt 4</li>
+			<li>Im an elemnt 5</li>
+			<li>Im an elemnt 6</li>
+			<li>Im an elemnt 7</li>
+			<li>Im an elemnt 8</li>
+			<li>Im an elemnt 9</li>
+			<li>
+				<div class="nkn-dropdown">
+					<div  class="nkn-dropdown-toggle" data-nkn-role="dropdown-toggle">
+						drop me 
+					</div>
+					
+					<ul class="nkn-dropdown-content">
+						<li><a href="#">Action</a></li>
+						<li><a href="#">Another action</a></li>
+						<li><a href="#">Something else here</a></li>
+					</ul>
+				</div>
+			</li>
+			<li>Im an elemnt 10</li>
+			<li>Im an elemnt 11</li>
+			<li>Im an elemnt 1</li>
+			<li>Im an elemnt 1</li>
+			<li>Im an elemnt 1</li>
+		</ul>
+		<!-- End Dropdown on scroll -->
 
-<p>ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum   </p>
-<p>ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum   </p>
-<p>ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum   </p>
+		<script src="../javascript/unkuna.js"></script>
+		<script src="../javascript/dropdown.js"></script>
+		<script src="../javascript/initialize.js"></script>
 
-
-<ul style="overflow-x: auto; display: flex; width: 600px;">
-    <li>Im an elemnt 1</li>
-    <li>Im an elemnt 2</li>
-    <li>Im an elemnt 3</li>
-    <li>Im an elemnt 4</li>
-    <li>Im an elemnt 5</li>
-    <li>Im an elemnt 6</li>
-    <li>Im an elemnt 7</li>
-    <li>Im an elemnt 8</li>
-    <li>Im an elemnt 9</li>
-    <li>
-      <div class="nkn-dropdown">
-          <div class="nkn-dropdown-toggle" href="#" data-nkn-role="dropdown-toggle">
-            Dropdown
-            i
-          </div>
-          <ul class="nkn-content">
-            <li><a href="#">Action</a></li>
-            <li><a href="#">Another action</a></li>
-            <li><a href="#">Something else here</a></li>
-          </ul>
-      </div>
-    </li>
-    <li>Im an elemnt 10</li>
-    <li>Im an elemnt 11</li>
-    <li>Im an elemnt 1</li>
-    <li>Im an elemnt 1</li>
-    <li>Im an elemnt 1</li>
-</ul>
-<p>ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum   </p>
-<p>ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum   </p>
-<p>ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum   </p>
-
-<script src="../javascript/unkuna.js"></script>
-<script src="../javascript/dropdown.js"></script>
-<script src="../javascript/initialize.js"></script>
-
-</body>
+	</body>
 </html>
 
