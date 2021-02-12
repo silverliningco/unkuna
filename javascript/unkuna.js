@@ -128,7 +128,7 @@ nkn.clickHandler = function(event) {
     // If click target has a defined nkn-role, call corresponding handler function.
     switch (nknRole) {
         case "accordion-toggle":
-            nkn.toggleAccordionSection(nknTarget);
+            nkn.toggleAccordionItem(nknTarget);
             break;
         case "close-modal":
             nkn.closeModal(nknTarget);
