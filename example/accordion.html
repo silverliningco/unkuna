@@ -5,67 +5,64 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <link rel="stylesheet" href="/css/initialize.css"> 
-    <link rel="stylesheet" href="/css/components/accordion.css">    
-    <link rel="stylesheet" href="../css/utilities/icon.css">
-    <link rel="stylesheet" href="../css/utilities/display.css">
-    <link rel="stylesheet" href="../css/utilities/alignment.css">
-    <link rel="stylesheet" href="../css/utilities/float-element.css">
+    <link rel="stylesheet" href="../css/initialize.css"> 
+    <link rel="stylesheet" href="../css/components/accordion.css">    
+    <link rel="stylesheet" href="../css/layout/container.css"> 
     <link rel="stylesheet" href="../theme/unkuna-theme.css">
 
 </head>
 <body>
-    <!--- Simple Accordion -->
-    <div class="nkn-accordion">
-        <div class="nkn-accordion-item">
-            <div class="nkn-accordion-heading" data-nkn-role="accordion-toggle">
-                Lightning Fast 
-                <span class="nkn-icon-toggle">
-                    <svg width="24" height="24">
-                        <title>Accordion toggle</title>
-                        <use xlink:href="../sprites/icons.svg#angle-down"></use>
-                    </svg>
-                    <!-- <i class="fas fa-caret-down"></i> -->
-                </span>
-            </div>
-            <div class="nkn-accordion-content">
-                <p>Version 3.0 is built for speed. Performance will no longer be compromised as we scale.</p>
-            </div>
-        </div>     
-        <div class="nkn-accordion-item">
-            <div class="nkn-accordion-heading" data-nkn-role="accordion-toggle">
-                Improved Tracing
-                <span class="nkn-icon-toggle">
-                    i
-                </span>
-            </div>
-            <div class="nkn-accordion-content">
-                Our Google Maps tracing library for existing homes has been completely redesigned.
-            </div>
-        </div>                            
+    <div class="nkn-container">
+
+        <h2>Accordion open only one at a time</h2>
+        <div class="nkn-accordion nkn-open-only-one">
+            <div class="nkn-accordion-item">
+                <div class="nkn-accordion-heading" data-nkn-role="accordion-toggle">
+                    Lightning Fast 
+                    <span class="nkn-icon-toggle">
+                        i
+                    </span>
+                </div>
+                <div class="nkn-accordion-content">
+                    <p>Version 3.0 is built for speed. Performance will no longer be compromised as we scale.</p>
+                </div>
+            </div>     
+            <div class="nkn-accordion-item">
+                <div class="nkn-accordion-heading" data-nkn-role="accordion-toggle">
+                    Improved Tracing
+                    <span class="nkn-icon-toggle">
+                        i
+                    </span>
+                </div>
+                <div class="nkn-accordion-content">
+                    Our Google Maps tracing library for existing homes has been completely redesigned.
+                </div>
+            </div>                            
+        </div>
+
+        <h2>Simple accordion (open at init)</h2>
+        <div class="nkn-accordion">
+            <div class="nkn-accordion-item nkn-open">
+                <div class="nkn-accordion-heading" data-nkn-role="accordion-toggle">
+                    Section 1 
+                    <span class="nkn-icon-toggle">
+                        i
+                    </span>
+                </div>
+                <div class="nkn-accordion-content">Section 1 Content</div>
+            </div>     
+            <div class="nkn-accordion-item">
+                <div class="nkn-accordion-heading" data-nkn-role="accordion-toggle">
+                    Section 2
+                    <span class="nkn-icon-toggle">
+                        i
+                    </span>
+                </div>
+                <div class="nkn-accordion-content">Section 2 Content</div>
+            </div>                            
+        </div>
     </div>
-    <h2>otro</h2>
-    <div class="nkn-accordion">
-        <div class="nkn-accordion-item nkn-open">
-            <div class="nkn-accordion-heading" data-nkn-role="accordion-toggle">
-                Section 1 
-                <span class="nkn-icon-toggle">
-                    i
-                </span>
-            </div>
-            <div class="nkn-accordion-content">Section 1 Content</div>
-        </div>     
-        <div class="nkn-accordion-item">
-            <div class="nkn-accordion-heading" data-nkn-role="accordion-toggle">
-                Section 2
-                <span class="nkn-icon-toggle">
-                    i
-                </span>
-            </div>
-            <div class="nkn-accordion-content">Section 2 Content</div>
-        </div>                            
-    </div>
-    <!--- End of accordion. -->
+
     <script src="../javascript/unkuna.js"></script>
     <script src="../javascript/accordion.js"></script>
     <script src="../javascript/initialize.js"></script>
