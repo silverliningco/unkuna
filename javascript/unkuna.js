@@ -133,23 +133,14 @@ nkn.clickHandler = function(event) {
         case "close-modal":
             nkn.closeModal(nknTarget);
             break;
-        case "menu-toggle":
-            nkn.toggleMenu(nknTarget);
+        case "hamburger-toggle":
+            nkn.toggleHamburger(nknTarget);
             break;
         case "navbar-toggle":
             nkn.toggleNavbar(nknTarget);
             break;
-        case "show-more":
-            //nkn.toggleShowMore(nknTarget);
-            break;
         case "sliding-door-knob":
             nkn.slideDoor(nknTarget);
-            break;
-        case "sidebar-toggle":
-            nkn.sidebarToggle(nknTarget);
-            break;
-        case "item-sidebar-toggle":
-            nkn.toggleSidebarItems(nknTarget);
             break;
         case "dropdown-toggle":
             nkn.dropdown(nknTarget);
