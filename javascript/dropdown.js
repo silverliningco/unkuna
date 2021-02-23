@@ -14,7 +14,7 @@ nkn.dropdown = function(toggle) {
    
     function setDropPosition() {
 
-        var contentDropdown = myDropdown.getElementsByClassName("nkn-content")[0];
+        var contentDropdown = myDropdown.getElementsByClassName("nkn-dropdown-content")[0];
         contentDropdown.style = null;
         
         function distanceFromBottom() {
@@ -28,7 +28,7 @@ nkn.dropdown = function(toggle) {
         const canDropDown = contentDropdown.clientHeight < distanceFromBottom();
         // if we don't have space to show the dropdown content at the bottom of the dropdown, change postion to start from bottom side.
         if (!canDropDown) {
-            contentDropdown.style.bottom = "40px";
+            contentDropdown.style.bottom = toggle.clientHeight + "px";
         }
         else{ 
             contentDropdown.style.bottom = null;
@@ -39,12 +39,12 @@ nkn.dropdown = function(toggle) {
         
         // If we are in scroll, use getBoundingClientRect to set correct position for dropdown content.
         if((myDropdownPosition.right >= 0) && (myDropdownPosition.left <= window.innerHeight)){
-            contentDropdown.style.right = myDropdownPosition.right - 40 + "px";
+            contentDropdown.style.right = myDropdownPosition.right - toggle.clientHeight + "px";
         }else{
-            contentDropdown.style.right = myDropdown.offsetRight - 40 + "px";
+            contentDropdown.style.right = myDropdown.offsetRight -toggle.clientHeight + "px";
         }
 
-        // If dropdown doesn't fit correctly in default position, change postion to start from right side.
+        // If dropdown doesn't fit correctly in default position, change position to start from right side.
         var widths = window.innerWidth - myDropdown.getBoundingClientRect().left - contentDropdown.clientWidth;
         if(widths < 0){
             contentDropdown.style.right = "1px";
@@ -63,5 +63,3 @@ nkn.dropdown = function(toggle) {
         }
     }
 }
-
-
