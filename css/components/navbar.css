@@ -28,14 +28,20 @@
 }
 
 .nkn-navbar .nkn-navbar-content ul.nkn-nav  li.nkn-nav-item {
-    padding: .5rem 1rem;
+    margin: .5rem 1rem;
 }
-
 
 .nkn-navbar.nkn-open  ul.nkn-nav {
     display: block;    
 }
 
+.nkn-navbar .nkn-navbar-content ul.nkn-nav .nkn-active {
+    color: var(--nkn-accent-color);
+}
+
+.nkn-navbar .nkn-navbar-content ul.nkn-nav .nkn-active a {
+    color: inherit;
+}
 /* On medium and full size screens.
 */
 @media (min-width: 768px) {    
