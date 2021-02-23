@@ -1,5 +1,4 @@
 :root {    
-
     --nkn-border-color: #d7caca;
     /*Esa variable se usa en el cuadro desplegable del dropdown*/
     --nkn-box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12); /*Explicamos con ejemplos en la documentación*/
@@ -14,7 +13,12 @@
     --nkn-primary-title-color: #d7caca;
 
     /*Color for secundary title*/
-    --nkn-secondary-title-color: #d7caca;
+    --nkn-secondary-title-color: #667;
+
+    /**/
+    --nkn-primary-color:#335c67;
+    --nkn-secondary-color: #9e2a2b;
+    --nkn-accent-color:#e09f3e;
 } 
 
 /* Variables for medium screens.
