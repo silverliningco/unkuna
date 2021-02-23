@@ -7,6 +7,7 @@
     <title>Navbar</title>
     <link rel="stylesheet" href="/css/initialize.css"> 
     <link rel="stylesheet" href="/css/components/navbar.css">    
+    <link rel="stylesheet" href="/css/components/dropdown.css"> 
     <link rel="stylesheet" href="../css/utilities/icon.css">
     <link rel="stylesheet" href="../css/utilities/display.css">
     <link rel="stylesheet" href="../css/utilities/alignment.css">
@@ -21,53 +22,57 @@
     <div class="nkn-navbar-heading" >
         <div class="nkn-brand">Coolcalc</div> 
         <div class="nkn-icon-toggle" data-nkn-role="navbar-toggle">
-            ii       
+            <svg class="nkn-icon">
+                <use xlink:href="/icons/sprites/icons.svg#navbar-toggle"></use>
+            </svg>       
         </div>
     </div>
     <nav class="nkn-navbar-content">
         <ul class="nkn-nav">
             <li class="nkn-nav-item nkn-active"><a href="#">Precios</a></li>
             <li class="nkn-nav-item"><a href="#">Registro</a></li>
-            <li class="nkn-nav-item"><a href="#" class="nkn-button">Contacto</a></li>                
+            <li class="nkn-nav-item"><a href="#">Contacto</a></li>                
         </ul>
     </nav>        
 </div>
 <!--- End of Simple Navbar. -->
 
 <!--- Navbar - with dropdown -->
-<nav class="nkn-navbar">
+<div class="nkn-navbar">
     <div class="nkn-navbar-heading" >
         <div class="nkn-brand">brand</div> 
         <div class="nkn-icon-toggle" data-nkn-role="navbar-toggle">
-            i       
+            <svg class="nkn-icon">
+                <use xlink:href="/icons/sprites/icons.svg#navbar-toggle"></use>
+            </svg>     
         </div>
     </div>
-    <div class="nkn-navbar-content">
-        <ul class="nkn-nav" style="text-align: left;">
+    <nav class="nkn-navbar-content">
+        <ul class="nkn-nav">
             <li class="nkn-nav-item nkn-active"><a href="">Home</a></li>
             <li class="nkn-nav-item"><a href="#">Precios</a></li>
             <li class="nkn-nav-item"><a href="#">Registro</a></li>
             <li class="nkn-nav-item"><a href="#">Contacto</a></li>
-            <li class="nkn-nav-item">
-                <div class="nkn-dropdown">
+            <li class="">
+                <div class="nkn-dropdown nkn-open">
                     <div class="nkn-dropdown-toggle" data-nkn-role="dropdown-toggle">
-                        Country
+                        Pais
                         <div class="nkn-icon-toggle">
-                            <svg class="cc-icon">
-                                <use xlink:href="/coolcalc/local-assets/sprites/restui.svg#add-to-collection"></use>
+                            <svg class="nkn-icon">
+                                <use xlink:href="/icons/sprites/icons.svg#angle-down"></use>
                             </svg>
                         </div>                        
                     </div>                                    
                     <ul class="nkn-dropdown-content">
-                        <li><a href="#">United States</a></li>
+                        <li><a href="#">Estados Unidos</a></li>
                         <li><a href="#">Canada</a></li>
                     </ul>
                 </div>
             </li>
             <li class="nkn-nav-item"><a href="#">Albums</a></li>                 
         </ul>
-    </div>        
-</nav>
+    </nav>        
+</div>
 <!--- End of Navbar - with dropdown -->
 
 
