@@ -5,7 +5,6 @@
     --nkn-modal-z-index: 2020;
     --nkn-navbar-z-index: 2010;
     --nkn-dropdown-z-index: 1999;
-    --nkn-curtain-z-index: 2000;
     /*height of input, select, buttom*/
     --nkn-form-element-height: 2.4375rem;
 }
