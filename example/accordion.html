@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="../css/initialize.css"> 
     <link rel="stylesheet" href="../css/components/accordion.css">    
     <link rel="stylesheet" href="../css/layout/container.css"> 
+    <link rel="stylesheet" href="../css/utilities/icon.css"> 
     <link rel="stylesheet" href="../theme/unkuna-theme.css">
 
 </head>
@@ -17,11 +18,13 @@
         <h2>Accordion open only one at a time</h2>
         <div class="nkn-accordion nkn-open-only-one">
             <div class="nkn-accordion-item">
-                <div class="nkn-accordion-heading" data-nkn-role="accordion-toggle">
-                    Lightning Fast 
-                    <span class="nkn-icon-toggle">
-                        i
-                    </span>
+                <div class="nkn-accordion-heading" data-nkn-role="accordion-toggle"> 
+                    <!-- Lightning Fast                   -->
+                    <div class="nkn-icon-toggle">
+                        <svg class="nkn-icon">
+                            <use xlink:href="../icons/sprites/icons.svg#angle-down"></use>
+                        </svg>
+                    </div>
                 </div>
                 <div class="nkn-accordion-content">
                     <p>Version 3.0 is built for speed. Performance will no longer be compromised as we scale.</p>
@@ -30,9 +33,11 @@
             <div class="nkn-accordion-item">
                 <div class="nkn-accordion-heading" data-nkn-role="accordion-toggle">
                     Improved Tracing
-                    <span class="nkn-icon-toggle">
-                        i
-                    </span>
+                    <div class="nkn-icon-toggle">
+                        <svg class="nkn-icon">
+                            <use xlink:href="../icons/sprites/icons.svg#angle-down"></use>
+                        </svg>
+                    </div>
                 </div>
                 <div class="nkn-accordion-content">
                     Our Google Maps tracing library for existing homes has been completely redesigned.
