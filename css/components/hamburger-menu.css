@@ -1,62 +1,59 @@
-.nkn-hamburger-menu .nkn-hamburger-container {
-    background-color: #fff;
+.nkn-hamburger-menu .nkn-icon-toggle {
+    margin: 1rem;
 }
 
-.nkn-hamburger-menu ul.nkn-hamburger-content {
-    list-style-type: none;
-    padding: 0; 
-    margin: 0;    
-}
-
-.nkn-hamburger-menu .nkn-hamburger-content > .nkn-link {
-    padding: .5rem 1rem;
-}
-
-.nkn-hamburger-menu .nkn-hamburger-container .nkn-hamburger-toggle {
-    padding: .5rem 1rem;
-}
 /*nkn-hamburger-menu close*/
-.nkn-hamburger-menu:not(.nkn-open) .nkn-hamburger-content {
+.nkn-hamburger-menu:not(.nkn-open) .nkn-curtain {
     display: none;
 }
-/*nkn-hamburger-menu open*/
 
-.nkn-hamburger-menu.nkn-open {
+/*nkn-hamburger-menu open*/
+.nkn-hamburger-menu.nkn-open .nkn-curtain {
     position: absolute;
     left: 0;
     right: 0;
     top: 0;
     bottom: 0;
+    z-index: var(--nkn-hamburger-menu-z-index);
     background-color: var(--nkn-curtain-color);
-    overflow: auto;
 }
 
-.nkn-hamburger-menu.nkn-open:after {
+.nkn-hamburger-menu.nkn-open .nkn-hamburger-content {
+    height: 100%;
+    overflow: auto;
+    box-shadow: var(--nkn-box-shadow);
+    width: 264px;
+    background-color: #fff;
+}
+
+/*hamburger content open right*/
+.nkn-hamburger-menu.nkn-open .nkn-hamburger-content.nkn-right { 
+    float: right;    
+}
+
+.nkn-hamburger-menu.nkn-open .nkn-hamburger-content.nkn-right .nkn-icon-toggle.nkn-close {
+    text-align: right;
+}
+
+/*hamburger content open left*/
+.nkn-hamburger-menu.nkn-open .nkn-hamburger-content.nkn-left { 
+    float: left;
+}
+
+.nkn-hamburger-menu .nkn-hamburger-content ul.nkn-nav { 
+    list-style-type: none;
+    padding: 0; 
+    margin: 0;    
+}
+
+.nkn-hamburger-menu .nkn-hamburger-content .nkn-nav-item {
+    margin: 1rem;
+    cursor: pointer;
+}
+
+.nkn-hamburger-menu.nkn-open .nkn-curtain:after {
     content: "";
     display: table;
     clear: both;
 }
 
-.nkn-hamburger-menu.nkn-open .nkn-hamburger-container {
-    height: 100%;
-    box-shadow: var(--nkn-box-shadow);
-    width: 264px;
-}
-
-/*nkn-hamburger-menu open right*/
-.nkn-hamburger-menu.nkn-open .nkn-hamburger-container.nkn-right { 
-    float: right;
-}
-
-.nkn-hamburger-menu.nkn-open .nkn-hamburger-container.nkn-right .nkn-hamburger-toggle { 
-    text-align: right;
-}
-
-/*nkn-hamburger-menu open left*/
-.nkn-hamburger-menu.nkn-open .nkn-hamburger-container.nkn-left { 
-    float: left;
-}
-
-.nkn-hamburger-menu.nkn-open .nkn-hamburger-container.nkn-left .nkn-hamburger-toggle { 
-    text-align: left;
-}
