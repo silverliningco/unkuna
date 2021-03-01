@@ -9,19 +9,19 @@
 /* accordion heading.
 */
 .nkn-accordion .nkn-accordion-item .nkn-accordion-heading {
-    display: block; 
     padding: .5rem;
-    color: #000;
-    position: relative;
+    cursor: pointer;
     border-bottom: solid 1px var(--nkn-border-color);    
+
+    display: flex;
+    align-items: center;
+    width: 100%;   
 }
 
-.nkn-accordion .nkn-accordion-item .nkn-accordion-heading .nkn-icon-toggle {
-    cursor: pointer;
-    position: absolute;
-    top: calc(50% - 3px);
-    transform: translate(-50%, -50%); 
-    right: 0;
+.nkn-accordion .nkn-accordion-item .nkn-accordion-heading  .nkn-icon-toggle {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
 }
 
 .nkn-accordion .nkn-accordion-item.nkn-open .nkn-icon-toggle {
@@ -33,14 +33,12 @@
 .nkn-accordion .nkn-accordion-item:not(.nkn-open) .nkn-accordion-content {
     height: 0; 
     overflow: hidden;
-    padding: 0 0.5rem;
 }
 
 .nkn-accordion .nkn-accordion-item.nkn-open .nkn-accordion-content {
     padding: .5rem;  
     height: auto;
-    border-bottom: solid 1px var(--nkn-border-color);
-    
+    border-bottom: solid 1px var(--nkn-border-color);   
 }
 
 .nkn-accordion .nkn-accordion-item .nkn-accordion-content {
