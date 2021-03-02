@@ -33,6 +33,7 @@
 .nkn-accordion .nkn-accordion-item:not(.nkn-open) .nkn-accordion-content {
     height: 0; 
     overflow: hidden;
+    padding: 0 0.5rem;
 }
 
 .nkn-accordion .nkn-accordion-item.nkn-open .nkn-accordion-content {
