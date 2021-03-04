@@ -71,3 +71,9 @@
 
 
 
+@media (max-width: 768px) {
+    .nkn-navbar .nkn-nav-item.nkn-dropdown.nkn-open .nkn-dropdown-content  {
+        position: relative;
+        box-shadow: none;
+    }
+}
