@@ -130,6 +130,9 @@ nkn.clickHandler = function(event) {
         case "accordion-toggle":
             nkn.toggleAccordionItem(nknTarget);
             break;
+        case "open-modal":
+            nkn.openModal(nknTarget.getAttribute("data-nkn-target"));
+            break;
         case "close-modal":
             nkn.closeModal(nknTarget);
             break;
@@ -138,9 +141,6 @@ nkn.clickHandler = function(event) {
             break;
         case "navbar-toggle":
             nkn.toggleNavbar(nknTarget);
-            break;
-        case "sliding-door-knob":
-            nkn.slideDoor(nknTarget);
             break;
         case "dropdown-toggle":
             nkn.dropdown(nknTarget);
