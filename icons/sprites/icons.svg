@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+    <!--hamburguer icon-->
+    <symbol id="hamburger-icon" viewBox="0 0 24 24">
+        <title>Icon hamburger menu</title>
+        <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+            <rect id="bound" x="0" y="0" width="24" height="24"></rect>
+            <rect id="Rectangle-20" fill="currentcolor" x="4" y="5" width="16" height="3" rx="1.5"></rect>
+            <path d="M5.5,15 L18.5,15 C19.3284271,15 20,15.6715729 20,16.5 C20,17.3284271 19.3284271,18 18.5,18 L5.5,18 C4.67157288,18 4,17.3284271 4,16.5 C4,15.6715729 4.67157288,15 5.5,15 Z M5.5,10 L18.5,10 C19.3284271,10 20,10.6715729 20,11.5 C20,12.3284271 19.3284271,13 18.5,13 L5.5,13 C4.67157288,13 4,12.3284271 4,11.5 C4,10.6715729 4.67157288,10 5.5,10 Z" fill="currentcolor"></path>
+        </g>
+    </symbol>
+    <!-- close icon -->
+    <symbol id="close-icon" viewBox="0 0 24 24">        
+        <g stroke="none" stroke-width="1" fill="currentcolor" fill-rule="evenodd">
+            <g transform="translate(12.000000, 12.000000) rotate(-45.000000) translate(-12.000000, -12.000000) translate(4.000000, 4.000000)" fill="currentcolor">
+                <rect x="0" y="7" width="16" height="2" rx="1" fill="currentcolor" ></rect>
+                <rect transform="translate(8.000000, 8.000000) rotate(-270.000000) translate(-8.000000, -8.000000) " x="0" y="7" width="16" height="2" rx="1" fill="currentcolor"></rect>
+            </g>
+        </g>
+    </symbol>
+
+    <!--Dropdown icon-->
+    <symbol id="angle-down" viewBox="0 0 24 24" fill="currentcolor">
+        <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+            <polygon id="Shape" points="0 0 24 0 24 24 0 24" ></polygon>
+            <path d="M6.70710678,15.7071068 C6.31658249,16.0976311 5.68341751,16.0976311 5.29289322,15.7071068 C4.90236893,15.3165825 4.90236893,14.6834175 5.29289322,14.2928932 L11.2928932,8.29289322 C11.6714722,7.91431428 12.2810586,7.90106866 12.6757246,8.26284586 L18.6757246,13.7628459 C19.0828436,14.1360383 19.1103465,14.7686056 18.7371541,15.1757246 C18.3639617,15.5828436 17.7313944,15.6103465 17.3242754,15.2371541 L12.0300757,10.3841378 L6.70710678,15.7071068 Z" id="Path-94" fill="currentcolor" fill-rule="nonzero" transform="translate(12.000003, 11.999999) rotate(-180.000000) translate(-12.000003, -11.999999) "></path>
+        </g>
+    </symbol>
+</svg>
