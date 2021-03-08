@@ -45,6 +45,15 @@
 .nkn-navbar .nkn-navbar-content .nkn-nav .nkn-active a {
     color: inherit;
 }
+
+/*For dropdown embebed in navbar, rules style of .nkn-dropdown-content*/
+@media (max-width: 767px) {
+    .nkn-navbar .nkn-nav-item.nkn-dropdown.nkn-open .nkn-dropdown-content  {
+        position: relative;
+        box-shadow: none;
+    }
+}
+
 /* On medium and full size screens.
 */
 @media (min-width: 768px) {    
@@ -54,6 +63,15 @@
         justify-content: space-between;
     }
 
+    .nkn-navbar .nkn-navbar-heading {
+        margin: 0;
+    }
+
+    .nkn-navbar .nkn-navbar-heading .nkn-brand {
+        margin: .25rem .5rem;
+        padding: .25rem .5rem;
+    }
+    
     .nkn-navbar .nkn-navbar-content .nkn-nav {
         display: flex;
         position: relative;
@@ -66,14 +84,5 @@
 
     .nkn-navbar .nkn-navbar-heading .nkn-icon-toggle {
         display: none;
-    }
-}
-
-
-
-@media (max-width: 768px) {
-    .nkn-navbar .nkn-nav-item.nkn-dropdown.nkn-open .nkn-dropdown-content  {
-        position: relative;
-        box-shadow: none;
     }
 }
