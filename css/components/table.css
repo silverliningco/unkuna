@@ -43,9 +43,33 @@ table.nkn-table td, table.nkn-table th {
     }
 }
 
-/* On small screens apply class name .nkn-reduced to the table element.
-*/
 @media (max-width: 767px) {
+    /*Basic table*/
+    table.nkn-table.nkn-basic th:not(.nkn-hide-s):not(.nkn-hide-m):not(.nkn-hide-l),
+    table.nkn-table.nkn-basic td:not(.nkn-hide-s):not(.nkn-hide-m):not(.nkn-hide-l) {
+        display: table-cell;
+    }
+
+    table.nkn-table.nkn-basic tr {
+        border: solid 1px var(--nkn-border-color);
+    }
+
+    .nkn-table.nkn-basic thead th {
+        color: rgba(0, 0, 0, 0.4);
+        font-weight: 500;
+        background-color: #fff;
+        padding: .75rem;
+    }
+ 
+    .nkn-table.nkn-basic td {
+        padding: .75rem;
+    }
+    
+    .nkn-table.nkn-basic tbody tr:nth-child(2n) {
+        background-color: rgba(248, 249, 250, 0.7);
+    }
+    
+    /*reduced table*/
     table.nkn-reduced td {
         padding: .5rem;
     }
