@@ -20,12 +20,19 @@ nkn.toggleNavbar = function(toggle) {
             myMenu.classList.add("nkn-open");
             var myLinks = myMenu.querySelectorAll("LI");
             for (var indx = 0; indx < myLinks.length; indx++) {
-                if (myLinks[indx].classList.contains("nkn-nav-item")) {
-                    myLinks[indx].addEventListener("click", nkn.closeNavbar);
+                if (myLinks[indx].classList.contains("nkn-nav-item") ) {
+                    if(myLinks[indx].classList.contains("nkn-dropdown")) {
+                        var myDropdown = myLinks[indx];
+                        var contentDropdown = myDropdown.getElementsByClassName("nkn-dropdown-content")[0];
+                        contentDropdown.addEventListener("click", nkn.closeNavbar);
+                    } else {
+
+                        myLinks[indx].addEventListener("click", nkn.closeNavbar);
+                    }
+
                 }
             }
         }
     }
 }
-
 
