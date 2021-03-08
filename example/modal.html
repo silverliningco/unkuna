@@ -7,6 +7,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="/css/initialize.css"> 
     <link rel="stylesheet" href="/css/components/modal.css">    
+    <link rel="stylesheet" href="/css/components/forms.css"> 
     <link rel="stylesheet" href="../css/utilities/icon.css">
     <link rel="stylesheet" href="../css/utilities/display.css">
     <link rel="stylesheet" href="../css/utilities/alignment.css">
@@ -20,10 +21,13 @@
 <button class="my-button" data-nkn-role="open-modal" data-nkn-target="modal2">Open modal2</button>
 <div class="nkn-modal-container">
     <div id="modal1" class="nkn-modal nkn-small">
-        <div class="nkn-modal-heading" >Thank you
-            <span data-nkn-role="close-modal" class="nkn-close">
-                x
-            </span>
+        <div class="nkn-modal-heading" >
+            Thank you
+            <div class="nkn-icon-toggle" data-nkn-role="close-modal">
+                <svg class="nkn-icon">
+                    <use xlink:href="/icons/sprites/icons.svg#close-icon"></use>                
+                </svg>
+            </div>
         </div>
         <div class="nkn-modal-content">
             <div class="nkn-center"><i class="fas fa-check my-check"></i></div>
@@ -43,13 +47,16 @@
 <!-- /*segundo modal*/ -->
 <div class="nkn-modal-container nkn-open">    
     <div id="modal2" class="nkn-modal nkn-large">
-        <div class="nkn-modal-heading" >Thank you
-            <span data-nkn-role="close-modal" class="nkn-close">
-                x
-            </span>
+        <div class="nkn-modal-heading" >
+            Thank you
+            <div class="nkn-icon-toggle" data-nkn-role="close-modal">
+                <svg class="nkn-icon">
+                    <use xlink:href="/icons/sprites/icons.svg#close-icon"></use>                
+                </svg>
+            </div>
         </div>
         <div class="nkn-modal-content">
-            <div class="nkn-center"><i class="fas fa-check my-check"></i></div>
+            <div class="nkn-center"></div>
             <p class="nkn-center">Welcome to our team!</p>it. Commodi pariatur sapiente enim aspernatur dignissimos ex explicabo placeat nostrum laborum eveniet, necessitatibus eligendi tenetur in accusantium soluta facilis nam ullam distinctio!
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora quia dolore dolorum quam, excepturi a iusto adipisci earum voluptas? Possimus doloremque at nesciunt unde nobis officia ducimus distinctio repellat quod!
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo adipisci velit perferendis esse voluptatem quia perspiciatis necessitatibus suscipit nihil voluptas. Delectus ducimus vero animi cupiditate illum fugit nisi dignissimos voluptas?

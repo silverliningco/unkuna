@@ -98,13 +98,5 @@
     align-items: center;
 }
 
-/* Modal close button.
-*/
-.nkn-modal .nkn-close {
-    float: right;
-    line-height: 1.5rem;
-    text-align: center;
-    cursor: pointer;
-}
 
 
