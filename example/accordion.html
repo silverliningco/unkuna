@@ -15,55 +15,63 @@
 <body>
     <div class="nkn-container">
 
-        <h2>Accordion open only one at a time</h2>
-        <div class="nkn-accordion nkn-open-only-one">
-            <div class="nkn-accordion-item">
-                <div class="nkn-accordion-heading" data-nkn-role="accordion-toggle"> 
-                    <!-- Lightning Fast                   -->
-                    <div class="nkn-icon-toggle">
-                        <svg class="nkn-icon">
-                            <use xlink:href="../icons/sprites/icons.svg#angle-down"></use>
-                        </svg>
-                    </div>
-                </div>
-                <div class="nkn-accordion-content">
-                    <p>Version 3.0 is built for speed. Performance will no longer be compromised as we scale.</p>
-                </div>
-            </div>     
-            <div class="nkn-accordion-item">
-                <div class="nkn-accordion-heading" data-nkn-role="accordion-toggle">
-                    Improved Tracing
-                    <div class="nkn-icon-toggle">
-                        <svg class="nkn-icon">
-                            <use xlink:href="../icons/sprites/icons.svg#angle-down"></use>
-                        </svg>
-                    </div>
-                </div>
-                <div class="nkn-accordion-content">
-                    Our Google Maps tracing library for existing homes has been completely redesigned.
-                </div>
-            </div>                            
-        </div>
-
-        <h2>Simple accordion (open at init)</h2>
+        <h2>Accordion simple</h2>
         <div class="nkn-accordion">
             <div class="nkn-accordion-item nkn-open">
-                <div class="nkn-accordion-heading" data-nkn-role="accordion-toggle">
-                    Section 1 
-                    <span class="nkn-icon-toggle">
-                        i
-                    </span>
+                <div class="nkn-accordion-heading" data-nkn-role="accordion-toggle"> 
+                    Encabezado del acordeón 1                 
+                    <div class="nkn-icon-toggle">
+                        <svg class="nkn-icon">
+                            <use xlink:href="/icons/sprites/icons.svg#angle-down"></use>
+                        </svg>
+                    </div>
                 </div>
-                <div class="nkn-accordion-content">Section 1 Content</div>
+                <div class="nkn-accordion-content">
+                    <p>Contenido del item de acordeón 1.</p>
+                </div>
             </div>     
             <div class="nkn-accordion-item">
                 <div class="nkn-accordion-heading" data-nkn-role="accordion-toggle">
-                    Section 2
-                    <span class="nkn-icon-toggle">
-                        i
-                    </span>
+                    Encabezado del item de acordeón 2
+                    <div class="nkn-icon-toggle">
+                        <svg class="nkn-icon">
+                            <use xlink:href="/icons/sprites/icons.svg#angle-down"></use>
+                        </svg>
+                    </div>
                 </div>
-                <div class="nkn-accordion-content">Section 2 Content</div>
+                <div class="nkn-accordion-content">
+                    <p>Contenido del item de acordeón 2.</p>
+                </div>
+            </div>                            
+        </div>  
+
+        <h2>Expandir una sección de acordeón a la vez</h2>
+        <div class="nkn-accordion nkn-open-only-one">
+            <div class="nkn-accordion-item nkn-open">
+                <div class="nkn-accordion-heading" data-nkn-role="accordion-toggle"> 
+                    Encabezado del acordeón 1                 
+                    <div class="nkn-icon-toggle">
+                        <svg class="nkn-icon">
+                            <use xlink:href="/icons/sprites/icons.svg#angle-down"></use>
+                        </svg>
+                    </div>
+                </div>
+                <div class="nkn-accordion-content">
+                    <p>Contenido del item de acordeón 1.</p>
+                </div>
+            </div>     
+            <div class="nkn-accordion-item">
+                <div class="nkn-accordion-heading" data-nkn-role="accordion-toggle">
+                    Encabezado del item de acordeón 2
+                    <div class="nkn-icon-toggle">
+                        <svg class="nkn-icon">
+                            <use xlink:href="/icons/sprites/icons.svg#angle-down"></use>
+                        </svg>
+                    </div>
+                </div>
+                <div class="nkn-accordion-content">
+                    <p>Contenido del item de acordeón 1.</p>
+                </div>
             </div>                            
         </div>
     </div>
