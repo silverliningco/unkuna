@@ -1,5 +1,6 @@
 .nkn-hamburger-menu .nkn-icon-toggle {
     margin: 1rem;
+    cursor: pointer;
 }
 
 /*nkn-hamburger-menu close*/
@@ -26,6 +27,9 @@
     background-color: #fff;
 }
 
+.nkn-hamburger-menu.nkn-open .nkn-hamburger-content .nkn-icon-close {
+    cursor: pointer;
+}
 /*hamburger content open right*/
 .nkn-hamburger-menu.nkn-open .nkn-hamburger-content.nkn-right { 
     float: right;    
