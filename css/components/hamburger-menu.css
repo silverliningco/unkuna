@@ -1,4 +1,5 @@
-.nkn-hamburger-menu .nkn-icon-toggle {
+.nkn-hamburger-menu .nkn-icon-toggle,
+.nkn-hamburger-menu.nkn-open .nkn-hamburger-content .nkn-icon-close {
     margin: 1rem;
     cursor: pointer;
 }
@@ -27,15 +28,12 @@
     background-color: #fff;
 }
 
-.nkn-hamburger-menu.nkn-open .nkn-hamburger-content .nkn-icon-close {
-    cursor: pointer;
-}
 /*hamburger content open right*/
 .nkn-hamburger-menu.nkn-open .nkn-hamburger-content.nkn-right { 
     float: right;    
 }
 
-.nkn-hamburger-menu.nkn-open .nkn-hamburger-content.nkn-right .nkn-icon-toggle.nkn-close {
+.nkn-hamburger-menu.nkn-open .nkn-hamburger-content.nkn-right .nkn-icon-close {
     text-align: right;
 }
 
