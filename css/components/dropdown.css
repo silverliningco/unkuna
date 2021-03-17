@@ -1,4 +1,8 @@
 /*Dropdown*/
+.nkn-dropdown {
+    position: relative;
+}
+
 .nkn-dropdown .nkn-dropdown-toggle {
     display: flex;
     align-items: center;
