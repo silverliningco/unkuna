@@ -98,8 +98,9 @@
     border-bottom-right-radius: .4rem;
     border-top: solid 1px var(--nkn-border-color);
 
-    display: flex;
-    align-items: center;
+    /* display: flex;
+    align-items: center; */
+    line-height: 64px;
 }
 
 

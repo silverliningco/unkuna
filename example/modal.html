@@ -7,7 +7,9 @@
     <title>Document</title>
     <link rel="stylesheet" href="/css/initialize.css"> 
     <link rel="stylesheet" href="/css/components/modal.css">    
-    <link rel="stylesheet" href="/css/components/forms.css"> 
+    <link rel="stylesheet" href="/css/components/forms.css">
+    <link rel="stylesheet" href="../css/layout/container.css"> 
+    <link rel="stylesheet" href="../css/layout/grid-classic.css">
     <link rel="stylesheet" href="../css/utilities/icon.css">
     <link rel="stylesheet" href="../css/utilities/display.css">
     <link rel="stylesheet" href="../css/utilities/alignment.css">
@@ -16,77 +18,112 @@
     
 </head>
 <body>
-    <!--- Modal. -->
-<button class="nkn-button"  data-nkn-role="open-modal" data-nkn-target="modal1">Open modal1</button>
-<button class="my-button" data-nkn-role="open-modal" data-nkn-target="modal2">Open modal2</button>
-<div class="nkn-modal-container">
-    <div id="modal1" class="nkn-modal nkn-small">
-        <div class="nkn-modal-heading" >
-            Thank you
-            <div class="nkn-icon-toggle" data-nkn-role="close-modal">
-                <svg class="nkn-icon">
-                    <use xlink:href="/icons/sprites/icons.svg#close-icon"></use>                
-                </svg>
+    <div class="nkn-container">
+        <h1>modal</h1>
+        <section>
+            <h2>Open modal using data atribute</h2>
+            <button class="nkn-button" data-nkn-role="open-modal" data-nkn-target="modal1">Modal "Data"</button>
+            <div class="nkn-modal-container">
+                <div id="modal1" class="nkn-modal nkn-small">
+                    <div class="nkn-modal-heading">
+                        The Unkuña
+                        <div class="nkn-icon-close" data-nkn-role="close-modal">
+                            <svg class="nkn-icon">
+                                <use xlink:href="/icons/sprites/icons.svg#close-icon"></use>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="nkn-modal-content">
+                        <div class="nkn-center"><i class="fas fa-check my-check"></i></div>
+                        <p class="nkn-text-justify">The unkuña is a small embroidered cloak that is used to contain coca leaves as a closed bundle by tying the handles.</p>
+                    </div>
+                    <div class="nkn-modal-footer nkn-text-right">
+                        <button class="nkn-button"  data-nkn-role="close-modal">Cerrar</button>
+                    </div>
+                </div>
             </div>
-        </div>
-        <div class="nkn-modal-content">
-            <div class="nkn-center"><i class="fas fa-check my-check"></i></div>
-            <p class="nkn-center">Welcome to our team!</p>it. Commodi pariatur sapiente enim aspernatur dignissimos ex explicabo placeat nostrum laborum eveniet, necessitatibus eligendi tenetur in accusantium soluta facilis nam ullam distinctio!
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora quia dolore dolorum quam, excepturi a iusto adipisci earum voluptas? Possimus doloremque at nesciunt unde nobis officia ducimus distinctio repellat quod!
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo adipisci velit perferendis esse voluptatem quia perspiciatis necessitatibus suscipit nihil voluptas. Delectus ducimus vero animi cupiditate illum fugit nisi dignissimos voluptas?
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit neque autem placeat tenetur nam saepe voluptate praesentium ipsum. Reprehenderit deserunt error assumenda? Et iusto ad rem excepturi eligendi molestias tenetur?
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla impedit itaque commodi fuga quis! Consequuntur repellat architecto nesciunt, reprehenderit ipsum veritatis illum repellendus quaerat magnam, beatae quia fugiat deleniti perferendis.
-        </div>
-        <div class="nkn-modal-footer nkn-clear">
-            <button class="nkn-button nkn-mx-small">delete</button>
-            <button class="nkn-button">Iniciar sesión</button>
-        </div>
-    </div>
-</div> 
-
-<!-- /*segundo modal*/ -->
-<div class="nkn-modal-container nkn-open">    
-    <div id="modal2" class="nkn-modal nkn-large">
-        <div class="nkn-modal-heading" >
-            Thank you
-            <div class="nkn-icon-toggle" data-nkn-role="close-modal">
-                <svg class="nkn-icon">
-                    <use xlink:href="/icons/sprites/icons.svg#close-icon"></use>                
-                </svg>
+        </section>
+        <section>
+            <h2>Open modal using JavaScript</h2>
+            <button class="nkn-button" id="btn-open-modal">Modal "JavaScript"</button>
+            <div class="nkn-modal-container">
+                <div id="modal2" class="nkn-modal nkn-small">
+                    <div class="nkn-modal-heading">
+                        La unkuña
+                        <div class="nkn-icon-close" data-nkn-role="close-modal">
+                            <svg class="nkn-icon">
+                                <use xlink:href="/icons/sprites/icons.svg#close-icon"></use>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class = "nkn-modal-content">
+                        <p class = "nkn-text-justify">La unkuña tambien es utilizada para cargar papas, pan, y para llevar las "cosas de la tierra" en diferentes ceremonias tradicionales de los Andes.</p>
+                    </div>
+                    <div class = "nkn-modal-footer">
+                        <div class = "nkn-text-right">
+                            <button  data-nkn-role = "close-modal" class = "nkn-button">Cerrar</button>
+                        </div>            
+                    </div>
+                </div>
             </div>
-        </div>
-        <div class="nkn-modal-content">
-            <div class="nkn-center"></div>
-            <p class="nkn-center">Welcome to our team!</p>it. Commodi pariatur sapiente enim aspernatur dignissimos ex explicabo placeat nostrum laborum eveniet, necessitatibus eligendi tenetur in accusantium soluta facilis nam ullam distinctio!
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora quia dolore dolorum quam, excepturi a iusto adipisci earum voluptas? Possimus doloremque at nesciunt unde nobis officia ducimus distinctio repellat quod!
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo adipisci velit perferendis esse voluptatem quia perspiciatis necessitatibus suscipit nihil voluptas. Delectus ducimus vero animi cupiditate illum fugit nisi dignissimos voluptas?
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit neque autem placeat tenetur nam saepe voluptate praesentium ipsum. Reprehenderit deserunt error assumenda? Et iusto ad rem excepturi eligendi molestias tenetur?
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla impedit itaque commodi fuga quis! Consequuntur repellat architecto nesciunt, reprehenderit ipsum veritatis illum repellendus quaerat magnam, beatae quia fugiat deleniti perferendis.
-        </div>
-        <div class="nkn-modal-footer nkn-clear">
-            <button class="nkn-button nkn-mx-small">delete</button>
-            <button class="nkn-button">Iniciar sesión</button>
-        </div>
+            <script>
+                var myOpenModalButton1 = document.getElementById("btn-open-modal");
+                myOpenModalButton1.addEventListener("click", function(){
+                    nkn.openModal(document.getElementById("modal2"));
+                });
+            </script>
+ 
+        </section>
+        
+        <section>
+            <h2>Modal Medium</h2>
+            <button class="nkn-button" data-nkn-role="open-modal" data-nkn-target="modal-medium">Modal Medium</button>
+            <div class="nkn-modal-container">
+                <div id="modal-medium" class="nkn-modal nkn-medium">
+                    <div class="nkn-modal-heading">
+                        Iniciar Sesion
+                        <div class="nkn-icon-close" data-nkn-role="close-modal">
+                            <svg class="nkn-icon">
+                                <use xlink:href="/icons/sprites/icons.svg#close-icon"></use>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="nkn-modal-content nkn-vertical-align">
+                        <form action="">
+                            <div class="nkn-row-padding">
+                                <div class="nkn-col-s4">
+                                    <label class="nkn-label" for="username">Username:</label>
+                                </div>
+                                <div class="nkn-col-s8">
+                                    <input class="nkn-input" id="username" type="text">
+                                </div>
+                            </div>
+                            <div class="nkn-row-padding">
+                                <div class="nkn-col-s4">
+                                    <label class="nkn-label" for="password">Password:</label>
+                                </div>
+                                <div class="nkn-col-s8">
+                                    <input class="nkn-input" id="password" type="password">
+                                </div>
+                            </div>
+                        </form>  
+                    </div>
+                    <div class="nkn-modal-footer nkn-space-between">
+                        <button  data-nkn-role="close-modal" class="nkn-button">Cerrar</button>
+                        <button class="nkn-button">Login</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+                
     </div>
-</div> 
-<!--- End of modal. -->
+    
 
 
 <script src="../javascript/unkuna.js"></script>
 <script src="../javascript/modal.js"></script>
 <script src="../javascript/initialize.js"></script>
-
-<!-- <script>
-    var myOpenModalButton1 = document.getElementById("btn-open-modal1");
-    myOpenModalButton1.addEventListener("click", function(){
-        nkn.openModal(document.getElementById("modal1"));
-    });
-
-    var myOpenModalButton2 = document.getElementById("btn-open-modal2");
-    myOpenModalButton1.addEventListener("click", function(){
-        nkn.openModal(document.getElementById("modal2"));
-    });
-</script> -->
 
 </body>
 </html>
