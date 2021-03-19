@@ -1,3 +1,5 @@
+/*Alert
+*/
 /*Error message, informative message, warning message*/
 .nkn-alert:not(:empty) {
     border-radius: .5rem;    

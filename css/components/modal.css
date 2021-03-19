@@ -1,4 +1,4 @@
-/* Modal container.
+/* Modal
 */
 .nkn-modal-container:not(.nkn-open) {
     display: none; 
@@ -98,8 +98,6 @@
     border-bottom-right-radius: .4rem;
     border-top: solid 1px var(--nkn-border-color);
 
-    /* display: flex;
-    align-items: center; */
     line-height: 64px;
 }
 

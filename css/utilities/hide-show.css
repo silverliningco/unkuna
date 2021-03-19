@@ -27,9 +27,10 @@
         display: none;
     }
 }
+
 /*Show element*/
 .nkn-show {
-    display: block; /*Revisar con Carlos, ver como funciona*/
+    display: block;
 }
 
 

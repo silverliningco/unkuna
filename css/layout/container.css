@@ -1,4 +1,5 @@
-/* -------------------------------------------------- Container*/
+/*Container
+*/
 .nkn-container {
     max-width: var(--nkn-width-container);
     margin-right: auto;

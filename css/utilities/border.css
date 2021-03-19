@@ -1,4 +1,5 @@
-/*Border*/
+/*Border
+*/
 .nkn-border {
     border: solid 1px var(--nkn-border-color);
 }
