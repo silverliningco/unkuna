@@ -41,10 +41,17 @@ At [unkuna.org](https://www.unkuna.org/).
     </body>  
 </html>                            
 ```
-## Sponsor
-[![alt text](https://unkuna.org/local-assets/logo/logo-dcne.svg)](https://www.dcne.com/).
-
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
 Please make sure to update tests as appropriate.
+
+## Creators
+- Ward Welvaert
+- Maday Choque
+- Carlos Figueroa
+- Sheila Gutierrez
+## Sponsor
+[![alt text](https://unkuna.org/local-assets/logo/logo-dcne.svg)](https://www.dcne.com/).
+
+
