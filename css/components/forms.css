@@ -37,17 +37,10 @@
     color: var(--nkn-label-color);
 }
 
-.nkn-input-radio {
-    margin-bottom: .5rem;
-}
-
-.nkn-input-radio,
-.nkn-input-checkbox {
-    line-height: 1.5;
-}
 
 .nkn-label-middle {
     line-height: var(--nkn-form-element-height);
+    color: var(--nkn-label-color);
 }
 
 /*Margin for form row*/
