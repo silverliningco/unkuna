@@ -25,14 +25,17 @@
 }
 
 /*space between elements*/
+
 .nkn-space-between {
     display: flex;
     justify-content: space-between;
+}
+.nkn-align-items-center {
     align-items: center;
 }
-
 /*Vertical align 
 */
+
 .nkn-vertical-align{
     display: flex;
     justify-content: center;
