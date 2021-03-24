@@ -2,8 +2,8 @@
 */
 :root {
     /*z-index propierty*/
-    --nkn-hamburger-menu-z-index: 2020;
-    --nkn-modal-z-index: 2020;
+    --nkn-modal-z-index: 2030;
+    --nkn-hamburger-menu-z-index: 2020;    
     --nkn-navbar-z-index: 2010;
     --nkn-dropdown-z-index: 2000;
     /*height of input, select, buttom*/
