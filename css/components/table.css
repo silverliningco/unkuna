@@ -28,7 +28,7 @@ table.nkn-table td, table.nkn-table th {
     }
 
     .nkn-table thead th {
-        color: rgba(0, 0, 0, 0.4);
+        color: var(--nkn-secondary-title-color);
         font-weight: 500;
         background-color: #fff;
         padding: .75rem;
@@ -55,7 +55,7 @@ table.nkn-table td, table.nkn-table th {
     }
 
     .nkn-table.nkn-basic thead th {
-        color: rgba(0, 0, 0, 0.4);
+        color: var(--nkn-secondary-title-color);
         font-weight: 500;
         background-color: #fff;
         padding: .75rem;
