@@ -7,10 +7,10 @@
 
     /*background color modal*/
     --nkn-curtain-color: rgba(0,0,0,.5);   
-    --nkn-label-color:  rgba(0, 0, 0, 0.4);
+    --nkn-label-color:  #545454;
 
     /*Color for primary title*/
-    --nkn-primary-title-color: #d7caca;
+    --nkn-primary-title-color: #545454;
 
     /*Color for secundary title*/
     --nkn-secondary-title-color: #667;
